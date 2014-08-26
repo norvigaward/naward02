@@ -1,0 +1,490 @@
+<html>
+<head>
+  <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+  <script type='text/javascript'>
+  
+  
+   google.load('visualization', '1', {'packages': ['geomap']});
+   google.setOnLoadCallback(drawMap);
+    function drawMap() {
+      var data = google.visualization.arrayToDataTable([
+		['Country', 'Programming Languages'],
+['ac' ,{v:100, f: '\nAssembly: 10.76%\nPerl: 0.17%\nSQL: 11.26%\nC: 23.18%\nJava: 2.15%\nAda: 7.45%\nPHP: 13.91%\nObjectiveC: 0.50%\nJavaScript: 17.88%\nVisualBasic: 1.32%\nRuby: 0.99%\nCPP: 0.83%\nCS: 0.99%\nScala: 3.15%\nPascal: 4.97%\nPython: 0.50%'}],
+['ad' ,{v:100, f: '\nC: 47.56%\nPerl: 1.83%\nJavaScript: 40.24%\nPascal: 3.66%\nJava: 4.88%\nAda: 1.83%'}],
+['ae' ,{v:100, f: '\nPerl: 0.02%\nSQL: 0.53%\nPHP: 0.77%\nJavaScript: 33.78%\nJava: 6.05%\nAda: 0.12%\nPascal: 7.72%\nCS: 0.11%\nAssembly: 20.71%\nFS: 0.12%\nCPP: 0.03%\nPython: 0.39%\nHaskell: 0.17%\nPostScript: 0.21%\nRuby: 1.18%\nVisualBasic: 0.04%\nC: 27.18%\nScala: 0.49%\nDelphi: 0.16%\nGroovy: 0.21%'}],
+['af' ,{v:100, f: '\nAssembly: 47.74%\nSQL: 3.87%\nJava: 8.39%\nC: 33.55%\nJavaScript: 6.45%'}],
+['ag' ,{v:100, f: '\nSQL: 2.37%\nPerl: 0.13%\nJava: 22.86%\nScala: 0.06%\nCS: 0.26%\nRuby: 3.46%\nLisp: 0.13%\nGroovy: 1.28%\nActionScript: 0.19%\nPython: 1.41%\nPHP: 5.89%\nJavaScript: 31.95%\nCPP: 2.37%\nPascal: 0.45%\nC: 19.46%\nVisualBasic: 0.58%\nAssembly: 6.34%\nObjectiveC: 0.45%\nPostScript: 0.13%\nHaskell: 0.26%'}],
+['ai' ,{v:100, f: '\nLisp: 5.00%\nAssembly: 13.33%\nPHP: 8.33%\nCS: 0.83%\nPython: 1.67%\nFortran: 0.83%\nSQL: 5.00%\nRuby: 0.83%\nJava: 12.50%\nC: 20.00%\nDelphi: 1.67%\nHaskell: 1.67%\nActionScript: 1.67%\nCPP: 6.67%\nJavaScript: 5.83%\nPerl: 4.17%\nPascal: 6.67%\nVisualBasic: 1.67%\nPostScript: 1.67%'}],
+['al' ,{v:100, f: '\nCPP: 0.17%\nFS: 0.04%\nHaskell: 0.04%\nPascal: 0.22%\nCS: 0.17%\nC: 16.85%\nAssembly: 2.72%\nFortran: 0.02%\nObjectiveC: 0.02%\nRuby: 2.85%\nJava: 15.57%\nAda: 1.17%\nVisualBasic: 0.15%\nScala: 0.02%\nSQL: 3.02%\nPerl: 0.06%\nPHP: 1.02%\nMATLAB: 0.02%\nJavaScript: 55.62%\nPython: 0.24%'}],
+['am' ,{v:100, f: '\nObjectiveC: 0.05%\nJavaScript: 13.89%\nPHP: 8.22%\nRuby: 0.94%\nActionScript: 0.02%\nScala: 0.16%\nCPP: 7.69%\nAda: 3.07%\nPascal: 0.82%\nCS: 0.07%\nC: 33.53%\nPython: 0.64%\nMATLAB: 0.01%\nAssembly: 19.30%\nJava: 8.83%\nDelphi: 1.09%\nPerl: 0.11%\nSQL: 0.67%\nPostScript: 0.57%\nHaskell: 0.05%\nLisp: 0.03%\nGroovy: 0.14%\nVisualBasic: 0.11%'}],
+['an' ,{v:100, f: '\nC: 25.00%\nJavaScript: 10.00%\nJava: 17.50%\nSQL: 47.50%'}],
+['ao' ,{v:100, f: '\nPHP: 2.14%\nAssembly: 2.86%\nC: 39.29%\nJava: 11.43%\nPascal: 2.86%\nRuby: 1.43%\nJavaScript: 40.00%'}],
+['aq' ,{v:100, f: '\nJavaScript: 13.64%\nC: 86.36%'}],
+['ar' ,{v:100, f: '\nScala: 0.33%\nDelphi: 0.05%\nRuby: 0.27%\nObjectiveC: 0.00%\nJavaScript: 95.07%\nMATLAB: 0.00%\nPHP: 0.76%\nC: 2.28%\nCS: 0.04%\nPascal: 0.06%\nPostScript: 0.00%\nHaskell: 0.01%\nFS: 0.01%\nAda: 0.10%\nLisp: 0.00%\nGroovy: 0.01%\nVisualBasic: 0.06%\nFortran: 0.00%\nPerl: 0.01%\nSQL: 0.46%\nActionScript: 0.01%\nPython: 0.04%\nCPP: 0.02%\nJava: 0.34%\nAssembly: 0.09%'}],
+['as' ,{v:100, f: '\nAssembly: 5.49%\nObjectiveC: 1.03%\nCPP: 3.09%\nC: 27.96%\nPostScript: 0.51%\nPython: 4.63%\nPerl: 1.89%\nSQL: 5.15%\nRuby: 1.54%\nCS: 4.29%\nVisualBasic: 0.17%\nJava: 2.40%\nDelphi: 0.51%\nPHP: 3.43%\nPascal: 0.69%\nJavaScript: 37.22%'}],
+['at' ,{v:100, f: '\nJavaScript: 22.08%\nCPP: 0.32%\nPython: 1.24%\nActionScript: 0.01%\nPostScript: 0.07%\nSQL: 0.79%\nPHP: 2.23%\nDelphi: 0.05%\nScala: 0.68%\nC: 14.23%\nLisp: 0.03%\nGroovy: 0.03%\nAda: 0.28%\nJava: 1.45%\nAssembly: 0.36%\nFortran: 0.04%\nHaskell: 0.04%\nRuby: 0.41%\nFS: 0.01%\nMATLAB: 0.04%\nVisualBasic: 0.09%\nObjectiveC: 0.02%\nPerl: 0.23%\nPascal: 55.11%\nCS: 0.17%'}],
+['au' ,{v:100, f: '\nPython: 0.43%\nJava: 1.61%\nAda: 0.34%\nPerl: 0.13%\nSQL: 5.19%\nObjectiveC: 0.02%\nAssembly: 2.04%\nFortran: 0.04%\nJavaScript: 42.97%\nMATLAB: 1.48%\nPHP: 1.96%\nActionScript: 0.02%\nFS: 2.95%\nHaskell: 0.04%\nScala: 2.68%\nDelphi: 0.11%\nRuby: 2.07%\nPascal: 0.54%\nCS: 3.48%\nC: 31.26%\nCPP: 0.31%\nLisp: 0.01%\nGroovy: 0.15%\nVisualBasic: 0.12%\nPostScript: 0.04%'}],
+['aw' ,{v:100, f: '\nJavaScript: 57.14%\nScala: 42.86%'}],
+['ax' ,{v:100, f: '\nPerl: 2.00%\nPython: 2.67%\nJavaScript: 85.33%\nC: 8.00%\nPHP: 2.00%'}],
+['az' ,{v:100, f: '\nDelphi: 0.11%\nJava: 1.44%\nAda: 20.30%\nActionScript: 0.04%\nJavaScript: 11.12%\nPHP: 5.80%\nScala: 0.19%\nAssembly: 32.97%\nPascal: 1.48%\nGroovy: 0.08%\nRuby: 0.38%\nSQL: 4.70%\nCPP: 0.15%\nC: 21.24%'}],
+['ba' ,{v:100, f: '\nPerl: 0.36%\nVisualBasic: 0.50%\nActionScript: 0.04%\nPython: 3.97%\nCPP: 0.49%\nScala: 0.05%\nDelphi: 0.45%\nSQL: 0.73%\nJava: 1.41%\nAssembly: 1.39%\nFortran: 0.03%\nAda: 0.82%\nPascal: 0.08%\nCS: 0.15%\nRuby: 0.10%\nHaskell: 0.01%\nFS: 0.01%\nC: 28.58%\nJavaScript: 57.23%\nMATLAB: 0.04%\nPHP: 3.58%'}],
+['bb' ,{v:100, f: '\nRuby: 1.15%\nC: 37.93%\nJavaScript: 30.46%\nCPP: 1.15%\nAssembly: 23.56%\nJava: 5.75%'}],
+['bd' ,{v:100, f: '\nPerl: 0.32%\nVisualBasic: 2.07%\nRuby: 1.34%\nAda: 0.18%\nCPP: 0.18%\nSQL: 1.89%\nJava: 2.77%\nFortran: 0.23%\nAssembly: 5.62%\nCS: 0.46%\nC: 19.18%\nMATLAB: 0.69%\nJavaScript: 38.31%\nPython: 0.18%\nPHP: 26.56%'}],
+['be' ,{v:100, f: '\nVisualBasic: 0.33%\nCPP: 0.63%\nAssembly: 1.26%\nAda: 0.34%\nObjectiveC: 0.05%\nPHP: 2.44%\nMATLAB: 0.06%\nJavaScript: 39.98%\nDelphi: 0.98%\nScala: 1.89%\nPerl: 2.12%\nSQL: 10.31%\nFortran: 0.06%\nPascal: 15.85%\nJava: 2.36%\nPostScript: 0.07%\nC: 18.61%\nActionScript: 0.05%\nPython: 0.94%\nCS: 0.58%\nLisp: 0.11%\nGroovy: 0.15%\nFS: 0.02%\nRuby: 0.76%\nHaskell: 0.06%'}],
+['bf' ,{v:100, f: '\nJavaScript: 24.78%\nPascal: 38.94%\nC: 36.28%'}],
+['bg' ,{v:100, f: '\nCS: 0.14%\nC: 20.16%\nJavaScript: 44.42%\nMATLAB: 1.48%\nPHP: 10.72%\nSQL: 9.71%\nPerl: 0.38%\nCPP: 0.46%\nPython: 0.18%\nActionScript: 0.08%\nObjectiveC: 0.06%\nDelphi: 0.56%\nScala: 0.26%\nPostScript: 0.06%\nAda: 0.25%\nJava: 6.64%\nRuby: 0.42%\nFortran: 0.02%\nAssembly: 3.43%\nGroovy: 0.09%\nVisualBasic: 0.10%\nPascal: 0.37%'}],
+['bh' ,{v:100, f: '\nAssembly: 11.26%\nC: 8.52%\nJava: 7.42%\nRuby: 0.27%\nPascal: 1.37%\nJavaScript: 70.88%\nSQL: 0.27%'}],
+['bi' ,{v:100, f: '\nPascal: 11.76%\nC: 38.24%\nJavaScript: 13.24%\nAssembly: 8.82%\nSQL: 10.29%\nPHP: 17.65%'}],
+['bj' ,{v:100, f: '\nJavaScript: 20.00%\nPascal: 15.00%\nC: 35.00%\nPython: 15.00%\nJava: 15.00%'}],
+['bm' ,{v:100, f: '\nCS: 0.19%\nAda: 0.10%\nJava: 3.15%\nSQL: 3.44%\nPHP: 1.43%\nJavaScript: 6.68%\nPascal: 1.15%\nRuby: 0.10%\nAssembly: 58.87%\nC: 24.90%'}],
+['bn' ,{v:100, f: '\nCPP: 17.79%\nAssembly: 6.94%\nJavaScript: 41.43%\nC: 16.70%\nPascal: 1.08%\nJava: 5.42%\nAda: 8.46%\nSQL: 0.87%\nPHP: 1.30%'}],
+['bo' ,{v:100, f: '\nCS: 0.21%\nC: 31.73%\nAssembly: 1.01%\nJava: 1.24%\nActionScript: 0.05%\nVisualBasic: 0.55%\nSQL: 0.76%\nJavaScript: 49.61%\nRuby: 0.71%\nPHP: 12.84%\nScala: 0.14%\nDelphi: 0.18%\nAda: 0.25%\nPerl: 0.60%\nMATLAB: 0.05%\nPascal: 0.07%'}],
+['br' ,{v:100, f: '\nDelphi: 0.19%\nLisp: 0.01%\nGroovy: 0.04%\nVisualBasic: 0.17%\nSQL: 0.98%\nPerl: 0.04%\nPostScript: 0.01%\nHaskell: 0.04%\nFS: 0.05%\nJava: 1.25%\nAda: 0.21%\nFortran: 0.01%\nAssembly: 0.18%\nObjectiveC: 0.00%\nPHP: 6.74%\nMATLAB: 0.01%\nJavaScript: 79.94%\nRuby: 0.43%\nCPP: 0.14%\nPython: 0.10%\nActionScript: 0.05%\nPascal: 0.15%\nCS: 0.12%\nC: 8.89%\nScala: 0.26%'}],
+['bs' ,{v:100, f: '\nSQL: 2.96%\nC: 9.47%\nJavaScript: 17.16%\nPHP: 8.88%\nJava: 2.96%\nAssembly: 7.69%\nCPP: 50.89%'}],
+['bt' ,{v:100, f: '\nVisualBasic: 0.80%\nDelphi: 0.80%\nAda: 0.54%\nAssembly: 59.52%\nC: 15.82%\nJava: 1.88%\nSQL: 0.80%\nPerl: 1.88%\nPHP: 3.75%\nJavaScript: 12.60%\nActionScript: 0.80%\nCPP: 0.80%'}],
+['bw' ,{v:100, f: '\nDelphi: 9.48%\nCPP: 0.26%\nPascal: 0.13%\nC: 36.62%\nJavaScript: 41.27%\nPHP: 0.17%\nAssembly: 1.21%\nPerl: 0.06%\nSQL: 0.06%\nJava: 0.17%\nAda: 0.06%\nMATLAB: 10.49%'}],
+['by' ,{v:100, f: '\nPHP: 18.06%\nScala: 0.21%\nDelphi: 1.12%\nObjectiveC: 0.13%\nPascal: 0.34%\nCS: 0.26%\nC: 15.53%\nRuby: 1.84%\nJavaScript: 42.00%\nAssembly: 10.30%\nGroovy: 0.09%\nVisualBasic: 0.13%\nCPP: 0.82%\nPython: 0.77%\nActionScript: 0.17%\nSQL: 2.10%\nPerl: 0.09%\nJava: 5.92%\nPostScript: 0.04%\nFS: 0.09%'}],
+['bz' ,{v:100, f: '\nHaskell: 0.18%\nCPP: 2.20%\nPython: 3.86%\nSQL: 3.46%\nPerl: 0.87%\nDelphi: 0.18%\nScala: 0.47%\nPascal: 0.29%\nCS: 0.79%\nC: 18.96%\nPostScript: 0.32%\nLisp: 0.07%\nGroovy: 0.47%\nVisualBasic: 0.14%\nAssembly: 3.93%\nPHP: 14.02%\nMATLAB: 0.14%\nJavaScript: 29.70%\nRuby: 2.02%\nJava: 13.52%\nAda: 4.40%'}],
+['ca' ,{v:100, f: '\nVisualBasic: 0.12%\nLisp: 0.05%\nC: 30.03%\nCS: 0.10%\nObjectiveC: 0.03%\nAssembly: 7.15%\nPostScript: 0.07%\nHaskell: 0.06%\nFS: 0.01%\nGroovy: 0.09%\nRuby: 1.16%\nJavaScript: 55.04%\nMATLAB: 0.06%\nPHP: 0.98%\nFortran: 0.03%\nSQL: 0.98%\nJava: 0.95%\nAda: 0.35%\nActionScript: 0.02%\nPython: 0.55%\nCPP: 0.34%\nPerl: 0.13%\nPascal: 1.50%\nDelphi: 0.10%\nScala: 0.10%'}],
+['cc' ,{v:100, f: '\nFortran: 0.10%\nJavaScript: 18.98%\nMATLAB: 0.31%\nPHP: 4.47%\nJava: 4.86%\nAda: 0.93%\nRuby: 1.23%\nDelphi: 0.35%\nPerl: 0.53%\nSQL: 0.91%\nActionScript: 0.12%\nPascal: 0.83%\nCS: 2.31%\nC: 46.86%\nObjectiveC: 0.07%\nHaskell: 0.03%\nFS: 0.09%\nPython: 3.18%\nVisualBasic: 1.08%\nGroovy: 0.12%\nLisp: 0.05%\nCPP: 9.66%\nScala: 0.05%\nPostScript: 0.04%\nAssembly: 2.85%'}],
+['cd' ,{v:100, f: '\nVisualBasic: 0.86%\nAssembly: 1.71%\nFS: 0.29%\nMATLAB: 0.86%\nGroovy: 0.86%\nScala: 0.29%\nFortran: 0.57%\nActionScript: 0.57%\nDelphi: 0.57%\nHaskell: 0.29%\nPHP: 3.71%\nRuby: 5.71%\nSQL: 14.00%\nPascal: 15.14%\nCS: 0.86%\nC: 33.71%\nPython: 0.86%\nCPP: 4.57%\nJava: 8.86%\nJavaScript: 5.71%'}],
+['cf' ,{v:100, f: '\nC: 62.50%\nJavaScript: 37.50%'}],
+['cg' ,{v:100, f: '\nC: 13.33%\nPascal: 26.67%\nJavaScript: 60.00%'}],
+['ch' ,{v:100, f: '\nC: 21.65%\nPostScript: 0.13%\nActionScript: 0.17%\nPython: 0.65%\nCPP: 1.35%\nDelphi: 0.27%\nScala: 0.73%\nRuby: 0.49%\nFortran: 0.40%\nAssembly: 7.97%\nLisp: 0.06%\nGroovy: 0.07%\nVisualBasic: 0.22%\nSQL: 4.21%\nPerl: 0.48%\nObjectiveC: 0.03%\nFS: 0.00%\nHaskell: 0.05%\nJavaScript: 40.58%\nMATLAB: 9.32%\nPHP: 3.83%\nAda: 0.52%\nJava: 2.40%\nPascal: 3.79%\nCS: 0.64%'}],
+['ci' ,{v:100, f: '\nCS: 1.81%\nC: 42.30%\nJava: 6.34%\nPerl: 1.81%\nJavaScript: 18.43%\nPHP: 5.74%\nRuby: 0.30%\nPascal: 23.26%'}],
+['ck' ,{v:100, f: '\nAda: 10.53%\nC: 31.58%\nPHP: 10.53%\nAssembly: 47.37%'}],
+['cl' ,{v:100, f: '\nCPP: 0.02%\nPascal: 0.05%\nCS: 0.00%\nC: 1.95%\nPerl: 0.01%\nMATLAB: 0.00%\nJavaScript: 95.95%\nLisp: 0.00%\nGroovy: 0.01%\nVisualBasic: 0.02%\nActionScript: 0.00%\nRuby: 0.25%\nSQL: 0.05%\nFS: 0.00%\nHaskell: 0.01%\nJava: 0.35%\nAda: 0.08%\nObjectiveC: 0.00%\nFortran: 0.00%\nAssembly: 0.10%\nPostScript: 0.00%\nScala: 0.16%\nDelphi: 0.03%\nPython: 0.00%\nPHP: 0.97%'}],
+['cm' ,{v:100, f: '\nVisualBasic: 0.46%\nJava: 2.29%\nSQL: 0.23%\nC: 19.22%\nAssembly: 1.14%\nPython: 1.14%\nPascal: 1.14%\nJavaScript: 43.02%\nPHP: 4.81%\nCS: 0.46%\nAda: 18.54%\nRuby: 7.55%'}],
+['cn' ,{v:100, f: '\nGroovy: 0.00%\nPascal: 0.07%\nScala: 0.16%\nLisp: 0.02%\nFortran: 0.56%\nAssembly: 1.30%\nRuby: 0.36%\nPHP: 1.10%\nMATLAB: 42.14%\nJavaScript: 12.74%\nJava: 1.74%\nCS: 0.17%\nPerl: 0.11%\nC: 17.21%\nObjectiveC: 0.00%\nSQL: 18.00%\nVisualBasic: 0.24%\nActionScript: 0.01%\nPython: 0.17%\nDelphi: 0.84%\nCPP: 1.57%\nAda: 1.40%\nFS: 0.02%\nHaskell: 0.02%\nPostScript: 0.05%'}],
+['co' ,{v:100, f: '\nCS: 0.41%\nScala: 0.17%\nGroovy: 0.11%\nLisp: 0.01%\nAda: 12.26%\nAssembly: 1.27%\nDelphi: 0.13%\nPython: 0.53%\nJava: 3.58%\nCPP: 0.38%\nObjectiveC: 0.12%\nRuby: 1.75%\nMATLAB: 0.08%\nJavaScript: 51.39%\nPHP: 4.00%\nVisualBasic: 0.41%\nPerl: 0.16%\nFortran: 0.07%\nPascal: 2.33%\nSQL: 1.48%\nActionScript: 0.09%\nC: 19.17%\nFS: 0.02%\nHaskell: 0.05%\nPostScript: 0.02%'}],
+['cr' ,{v:100, f: '\nAda: 0.47%\nPython: 0.11%\nC: 21.62%\nAssembly: 0.75%\nCS: 0.36%\nPascal: 0.52%\nLisp: 0.02%\nVisualBasic: 0.16%\nSQL: 3.53%\nPerl: 0.09%\nJava: 2.94%\nHaskell: 0.07%\nPHP: 22.48%\nJavaScript: 45.78%\nScala: 0.43%\nPostScript: 0.07%\nRuby: 0.48%\nCPP: 0.07%\nFortran: 0.05%'}],
+['cu' ,{v:100, f: '\nObjectiveC: 0.09%\nAssembly: 7.12%\nRuby: 0.90%\nPascal: 1.51%\nCS: 4.11%\nJavaScript: 4.81%\nMATLAB: 0.09%\nHaskell: 0.43%\nAda: 3.77%\nDelphi: 0.90%\nCPP: 0.74%\nPython: 2.36%\nFortran: 0.16%\nC: 60.12%\nLisp: 0.04%\nSQL: 1.21%\nPHP: 8.22%\nJava: 1.51%\nVisualBasic: 0.56%\nPerl: 0.34%\nScala: 0.56%\nPostScript: 0.45%'}],
+['cv' ,{v:100, f: '\nPascal: 12.41%\nSQL: 2.92%\nAssembly: 4.38%\nC: 11.68%\nJavaScript: 62.04%\nPHP: 6.57%'}],
+['cw' ,{v:100, f: '\nJavaScript: 100.00%'}],
+['cx' ,{v:100, f: '\nJava: 8.66%\nScala: 0.08%\nDelphi: 0.06%\nObjectiveC: 0.17%\nSQL: 6.39%\nPerl: 5.13%\nVisualBasic: 0.21%\nLisp: 1.59%\nActionScript: 0.06%\nRuby: 4.14%\nPython: 10.31%\nCPP: 10.41%\nPostScript: 0.08%\nHaskell: 0.58%\nJavaScript: 11.51%\nC: 32.72%\nCS: 0.82%\nPascal: 0.43%\nPHP: 5.57%\nMATLAB: 0.02%\nAssembly: 0.39%\nFortran: 0.56%\nAda: 0.12%'}],
+['cy' ,{v:100, f: '\nPascal: 0.61%\nAssembly: 10.43%\nPHP: 4.05%\nCPP: 0.74%\nPython: 0.98%\nLisp: 0.25%\nMATLAB: 1.96%\nJavaScript: 46.75%\nC: 18.77%\nGroovy: 0.12%\nSQL: 0.86%\nRuby: 0.61%\nScala: 0.25%\nPerl: 0.37%\nVisualBasic: 1.47%\nPostScript: 0.61%\nJava: 7.73%\nAda: 3.44%'}],
+['cz' ,{v:100, f: '\nDelphi: 0.79%\nJavaScript: 29.37%\nMATLAB: 0.29%\nPHP: 8.07%\nRuby: 5.42%\nJava: 7.77%\nPascal: 0.77%\nCS: 1.33%\nObjectiveC: 0.05%\nCPP: 4.43%\nPython: 1.92%\nActionScript: 0.05%\nScala: 0.77%\nHaskell: 0.14%\nC: 27.47%\nAda: 0.76%\nPostScript: 0.23%\nFortran: 0.09%\nPerl: 1.53%\nSQL: 4.64%\nAssembly: 2.29%\nFS: 0.04%\nVisualBasic: 0.68%\nGroovy: 0.13%\nLisp: 0.97%'}],
+['de' ,{v:100, f: '\nAda: 0.28%\nActionScript: 0.03%\nPython: 0.62%\nCPP: 1.00%\nObjectiveC: 0.03%\nCS: 0.27%\nSQL: 1.27%\nPerl: 0.66%\nHaskell: 0.09%\nVisualBasic: 0.33%\nGroovy: 0.06%\nLisp: 0.09%\nFS: 0.03%\nMATLAB: 0.75%\nPHP: 5.23%\nJava: 6.40%\nPascal: 0.99%\nFortran: 0.08%\nC: 16.81%\nScala: 0.80%\nRuby: 0.56%\nAssembly: 0.50%\nPostScript: 0.22%\nDelphi: 0.23%\nJavaScript: 62.68%'}],
+['dj' ,{v:100, f: '\nPascal: 1.82%\nCS: 0.80%\nC: 31.23%\nScala: 1.50%\nDelphi: 0.05%\nAssembly: 1.55%\nGroovy: 0.75%\nAda: 10.93%\nJava: 4.93%\nFS: 0.80%\nPython: 0.32%\nCPP: 0.21%\nSQL: 0.11%\nRuby: 3.21%\nPHP: 0.48%\nMATLAB: 0.11%\nJavaScript: 41.19%'}],
+['dk' ,{v:100, f: '\nAssembly: 0.26%\nPostScript: 0.01%\nPascal: 0.19%\nActionScript: 0.01%\nPython: 0.16%\nCPP: 0.08%\nFS: 0.01%\nHaskell: 0.01%\nDelphi: 0.05%\nScala: 0.29%\nObjectiveC: 0.00%\nJava: 0.70%\nAda: 0.22%\nVisualBasic: 0.02%\nGroovy: 0.05%\nLisp: 0.01%\nCS: 0.13%\nC: 8.16%\nJavaScript: 87.31%\nMATLAB: 0.02%\nPHP: 0.23%\nRuby: 0.38%\nSQL: 1.58%\nPerl: 0.09%\nFortran: 0.01%'}],
+['dm' ,{v:100, f: '\nJavaScript: 9.76%\nJava: 7.32%\nC: 9.76%\nAssembly: 73.17%'}],
+['do' ,{v:100, f: '\nSQL: 0.44%\nPerl: 0.08%\nPascal: 0.17%\nCS: 0.03%\nC: 71.06%\nRuby: 0.27%\nAda: 0.58%\nJava: 4.88%\nScala: 0.08%\nPHP: 1.29%\nJavaScript: 20.61%\nAssembly: 0.17%\nVisualBasic: 0.07%\nCPP: 0.12%\nPython: 0.10%\nObjectiveC: 0.02%\nHaskell: 0.02%\nFS: 0.01%'}],
+['dz' ,{v:100, f: '\nPascal: 3.32%\nAssembly: 1.81%\nJava: 2.11%\nC: 40.48%\nPHP: 3.02%\nMATLAB: 1.51%\nJavaScript: 45.92%\nSQL: 0.60%\nVisualBasic: 1.21%'}],
+['ec' ,{v:100, f: '\nCS: 0.22%\nPascal: 0.19%\nSQL: 0.75%\nRuby: 0.36%\nScala: 0.96%\nCPP: 0.13%\nPython: 0.06%\nAssembly: 0.32%\nPHP: 3.11%\nFortran: 0.02%\nLisp: 0.03%\nVisualBasic: 0.48%\nJavaScript: 66.15%\nMATLAB: 0.04%\nHaskell: 0.05%\nJava: 1.75%\nAda: 0.13%\nPerl: 0.10%\nC: 25.14%'}],
+['ee' ,{v:100, f: '\nFS: 0.07%\nAssembly: 4.80%\nFortran: 0.64%\nPascal: 0.86%\nCS: 2.10%\nC: 36.10%\nPerl: 0.25%\nSQL: 2.92%\nActionScript: 0.12%\nRuby: 1.38%\nPython: 1.96%\nScala: 2.59%\nDelphi: 0.48%\nCPP: 1.12%\nAda: 0.80%\nJava: 5.79%\nPHP: 6.09%\nMATLAB: 0.20%\nJavaScript: 31.02%\nPostScript: 0.01%\nLisp: 0.08%\nGroovy: 0.11%\nVisualBasic: 0.15%\nHaskell: 0.38%'}],
+['eg' ,{v:100, f: '\nVisualBasic: 0.00%\nSQL: 0.00%\nCPP: 0.00%\nAssembly: 0.11%\nPython: 0.00%\nHaskell: 0.00%\nC: 0.34%\nCS: 0.00%\nPascal: 0.01%\nGroovy: 0.00%\nAda: 0.05%\nJava: 0.06%\nScala: 0.16%\nDelphi: 0.02%\nPerl: 0.00%\nRuby: 0.16%\nPHP: 0.00%\nMATLAB: 0.00%\nJavaScript: 99.08%'}],
+['es' ,{v:100, f: '\nPHP: 0.55%\nC: 10.21%\nCS: 0.03%\nAssembly: 0.29%\nPascal: 0.23%\nLisp: 0.02%\nGroovy: 0.04%\nMATLAB: 1.25%\nJavaScript: 84.71%\nVisualBasic: 0.11%\nFS: 0.00%\nScala: 0.30%\nHaskell: 0.01%\nPostScript: 0.02%\nSQL: 0.65%\nAda: 0.21%\nObjectiveC: 0.00%\nDelphi: 0.08%\nFortran: 0.03%\nPerl: 0.04%\nRuby: 0.28%\nCPP: 0.14%\nPython: 0.05%\nActionScript: 0.01%\nJava: 0.74%'}],
+['et' ,{v:100, f: '\nJavaScript: 10.92%\nSQL: 1.15%\nAssembly: 35.63%\nC: 29.60%\nPascal: 0.29%\nPHP: 14.66%\nVisualBasic: 0.86%\nAda: 2.30%\nJava: 2.30%\nCPP: 0.29%\nMATLAB: 2.01%'}],
+['eu' ,{v:100, f: '\nCS: 0.30%\nC: 28.93%\nScala: 0.53%\nDelphi: 0.40%\nFS: 0.02%\nHaskell: 0.10%\nPostScript: 1.70%\nRuby: 0.62%\nFortran: 0.18%\nVisualBasic: 0.13%\nGroovy: 0.08%\nLisp: 0.02%\nAssembly: 6.07%\nObjectiveC: 0.04%\nActionScript: 0.09%\nPython: 0.87%\nCPP: 0.84%\nJavaScript: 42.67%\nMATLAB: 0.10%\nPHP: 3.96%\nSQL: 2.60%\nPerl: 0.62%\nAda: 0.35%\nJava: 5.43%\nPascal: 3.35%'}],
+['fi' ,{v:100, f: '\nGroovy: 0.14%\nJava: 5.21%\nCS: 0.28%\nCPP: 0.71%\nPerl: 0.35%\nFortran: 0.13%\nObjectiveC: 0.04%\nVisualBasic: 0.12%\nScala: 0.20%\nActionScript: 0.03%\nAda: 0.60%\nSQL: 0.57%\nAssembly: 1.81%\nPostScript: 0.14%\nHaskell: 0.14%\nPascal: 0.67%\nRuby: 1.16%\nC: 25.15%\nFS: 0.04%\nDelphi: 0.35%\nJavaScript: 59.26%\nMATLAB: 0.32%\nPHP: 1.80%\nPython: 0.71%\nLisp: 0.07%'}],
+['fj' ,{v:100, f: '\nSQL: 1.06%\nAssembly: 11.27%\nPHP: 4.58%\nJava: 1.06%\nC: 19.37%\nVisualBasic: 1.06%\nJavaScript: 58.80%\nRuby: 2.82%'}],
+['fk' ,{v:100, f: '\nPHP: 8.70%\nAssembly: 91.30%'}],
+['fm' ,{v:100, f: '\nFortran: 0.03%\nAda: 3.03%\nJava: 3.26%\nActionScript: 0.00%\nPython: 1.57%\nMATLAB: 0.02%\nPHP: 10.70%\nFS: 0.06%\nCPP: 0.44%\nPascal: 2.53%\nCS: 0.52%\nC: 42.04%\nObjectiveC: 0.05%\nRuby: 4.30%\nScala: 1.02%\nJavaScript: 15.22%\nHaskell: 0.35%\nVisualBasic: 0.08%\nGroovy: 1.86%\nLisp: 0.11%\nPostScript: 0.07%\nPerl: 0.44%\nSQL: 1.03%\nDelphi: 0.08%\nAssembly: 11.17%'}],
+['fo' ,{v:100, f: '\nDelphi: 0.85%\nPascal: 0.85%\nC: 37.29%\nAssembly: 3.39%\nAda: 3.39%\nJavaScript: 35.59%\nPHP: 5.93%\nJava: 5.08%\nSQL: 0.85%\nRuby: 6.78%'}],
+['fr' ,{v:100, f: '\nCPP: 0.40%\nJava: 1.82%\nAda: 0.22%\nPerl: 0.24%\nSQL: 0.88%\nJavaScript: 73.51%\nMATLAB: 1.39%\nPHP: 0.78%\nC: 13.56%\nAssembly: 0.41%\nFortran: 0.20%\nCS: 0.10%\nPascal: 4.77%\nVisualBasic: 0.12%\nGroovy: 0.08%\nLisp: 0.04%\nRuby: 0.49%\nPostScript: 0.03%\nHaskell: 0.07%\nFS: 0.02%\nScala: 0.31%\nDelphi: 0.09%\nObjectiveC: 0.02%\nActionScript: 0.02%\nPython: 0.43%'}],
+['ga' ,{v:100, f: '\nAda: 26.09%\nJava: 6.52%\nJavaScript: 52.17%\nVisualBasic: 2.17%\nPascal: 6.52%\nC: 6.52%'}],
+['gd' ,{v:100, f: '\nC: 29.13%\nCS: 0.87%\nPHP: 2.61%\nCPP: 2.61%\nPython: 3.48%\nJavaScript: 22.17%\nPascal: 3.04%\nActionScript: 0.87%\nAssembly: 0.43%\nJava: 33.91%\nDelphi: 0.87%'}],
+['ge' ,{v:100, f: '\nJavaScript: 13.00%\nVisualBasic: 1.93%\nJava: 34.63%\nAda: 0.17%\nDelphi: 0.06%\nRuby: 0.48%\nPascal: 0.20%\nObjectiveC: 0.02%\nPostScript: 0.09%\nC: 16.65%\nCS: 0.75%\nAssembly: 14.13%\nScala: 0.08%\nPHP: 10.00%\nHaskell: 0.12%\nPerl: 0.05%\nSQL: 6.88%\nActionScript: 0.03%\nCPP: 0.37%\nPython: 0.37%'}],
+['gg' ,{v:100, f: '\nPython: 0.39%\nCPP: 1.04%\nAda: 6.97%\nJava: 6.38%\nSQL: 1.69%\nPerl: 0.65%\nPHP: 5.73%\nJavaScript: 20.96%\nDelphi: 0.07%\nScala: 0.07%\nPascal: 0.91%\nCS: 0.65%\nC: 39.06%\nAssembly: 10.55%\nVisualBasic: 4.43%\nActionScript: 0.46%'}],
+['gh' ,{v:100, f: '\nPHP: 0.22%\nJavaScript: 22.28%\nJava: 3.40%\nAda: 4.39%\nScala: 0.11%\nCPP: 0.44%\nRuby: 1.98%\nFortran: 0.22%\nPascal: 1.10%\nC: 13.72%\nAssembly: 43.36%\nSQL: 8.45%\nPerl: 0.33%'}],
+['gi' ,{v:100, f: '\nScala: 1.85%\nAssembly: 37.50%\nJavaScript: 6.48%\nPascal: 2.31%\nC: 51.85%'}],
+['gl' ,{v:100, f: '\nSQL: 0.74%\nJavaScript: 31.62%\nCPP: 0.37%\nPHP: 1.10%\nJava: 0.74%\nC: 65.44%'}],
+['gm' ,{v:100, f: '\nPascal: 1.41%\nPerl: 0.85%\nPHP: 1.13%\nJavaScript: 1.97%\nC: 8.73%\nAssembly: 84.23%\nAda: 1.69%'}],
+['gp' ,{v:100, f: '\nAssembly: 9.30%\nJavaScript: 60.47%\nSQL: 6.98%\nC: 23.26%'}],
+['gq' ,{v:100, f: '\nJava: 100.00%'}],
+['gr' ,{v:100, f: '\nScala: 0.52%\nAda: 0.07%\nJava: 0.21%\nCS: 0.00%\nC: 0.73%\nLisp: 0.00%\nGroovy: 0.02%\nVisualBasic: 0.01%\nRuby: 0.27%\nFS: 0.00%\nHaskell: 0.00%\nPostScript: 0.00%\nMATLAB: 0.00%\nSQL: 0.04%\nPerl: 0.01%\nPHP: 0.13%\nDelphi: 0.34%\nObjectiveC: 0.00%\nAssembly: 0.11%\nFortran: 0.00%\nActionScript: 0.00%\nPascal: 0.03%\nPython: 0.04%\nCPP: 0.01%\nJavaScript: 97.47%'}],
+['gs' ,{v:100, f: '\nSQL: 0.60%\nAssembly: 0.45%\nC: 45.57%\nJava: 1.65%\nCS: 0.30%\nPascal: 0.15%\nRuby: 1.50%\nCPP: 0.15%\nScala: 0.90%\nPHP: 46.47%\nJavaScript: 1.88%\nPython: 0.23%\nHaskell: 0.15%'}],
+['gt' ,{v:100, f: '\nPerl: 0.07%\nSQL: 0.52%\nPython: 0.09%\nPostScript: 0.17%\nAda: 0.20%\nJava: 1.00%\nRuby: 0.85%\nPHP: 4.08%\nCPP: 0.07%\nCS: 0.15%\nC: 85.42%\nPascal: 0.04%\nAssembly: 0.26%\nScala: 0.17%\nVisualBasic: 0.26%\nJavaScript: 6.64%'}],
+['gu' ,{v:100, f: '\nAssembly: 13.04%\nJava: 4.35%\nAda: 78.26%\nC: 4.35%'}],
+['gy' ,{v:100, f: '\nAssembly: 47.37%\nPerl: 1.97%\nSQL: 2.63%\nPascal: 0.66%\nC: 10.53%\nJavaScript: 30.26%\nCPP: 2.63%\nAda: 1.97%\nJava: 1.97%'}],
+['hk' ,{v:100, f: '\nScala: 0.18%\nGroovy: 0.10%\nVisualBasic: 0.20%\nRuby: 2.30%\nObjectiveC: 0.01%\nAda: 0.75%\nJava: 3.96%\nDelphi: 0.37%\nActionScript: 0.10%\nPython: 0.18%\nCPP: 1.59%\nC: 14.33%\nSQL: 45.62%\nPerl: 0.16%\nJavaScript: 25.13%\nMATLAB: 0.11%\nPHP: 2.28%\nPostScript: 0.04%\nHaskell: 0.01%\nFS: 0.32%\nCS: 0.78%\nPascal: 0.13%\nFortran: 0.01%\nAssembly: 1.37%'}],
+['hm' ,{v:100, f: '\nPerl: 8.33%\nAssembly: 33.33%\nJavaScript: 16.67%\nC: 41.67%'}],
+['hn' ,{v:100, f: '\nJavaScript: 53.51%\nAssembly: 0.36%\nPython: 0.14%\nSQL: 1.05%\nGroovy: 0.14%\nPascal: 0.09%\nCS: 0.05%\nC: 25.41%\nRuby: 0.32%\nPHP: 6.75%\nScala: 0.14%\nAda: 11.36%\nJava: 0.68%'}],
+['hr' ,{v:100, f: '\nJava: 3.48%\nPascal: 0.45%\nHaskell: 0.30%\nLisp: 0.05%\nGroovy: 0.05%\nVisualBasic: 0.27%\nScala: 1.25%\nAda: 1.63%\nC: 22.91%\nCS: 0.36%\nObjectiveC: 0.09%\nCPP: 0.37%\nPerl: 0.19%\nSQL: 1.81%\nRuby: 0.46%\nActionScript: 0.16%\nPostScript: 0.04%\nDelphi: 0.29%\nPython: 0.54%\nAssembly: 1.05%\nJavaScript: 60.91%\nMATLAB: 0.12%\nPHP: 3.21%\nFortran: 0.03%\nFS: 0.01%'}],
+['ht' ,{v:100, f: '\nObjectiveC: 0.09%\nAssembly: 45.76%\nSQL: 0.40%\nRuby: 0.44%\nC: 3.05%\nJava: 0.09%\nPython: 0.19%\nPascal: 47.00%\nJavaScript: 1.83%\nPerl: 0.19%\nPHP: 0.87%\nCS: 0.09%'}],
+['hu' ,{v:100, f: '\nAda: 0.88%\nJava: 4.59%\nPostScript: 0.11%\nHaskell: 0.06%\nFS: 0.03%\nPerl: 0.83%\nVisualBasic: 0.19%\nGroovy: 0.07%\nLisp: 0.83%\nSQL: 5.24%\nObjectiveC: 0.04%\nJavaScript: 41.29%\nCPP: 1.08%\nPython: 1.24%\nActionScript: 0.42%\nC: 33.04%\nCS: 0.68%\nMATLAB: 0.07%\nFortran: 0.03%\nAssembly: 0.75%\nPHP: 4.11%\nRuby: 0.76%\nPascal: 1.44%\nScala: 1.71%\nDelphi: 0.53%'}],
+['id' ,{v:100, f: '\nActionScript: 0.00%\nAda: 4.09%\nCPP: 0.02%\nPython: 0.01%\nPHP: 0.39%\nMATLAB: 0.01%\nJavaScript: 91.54%\nJava: 1.25%\nFS: 0.01%\nPostScript: 0.00%\nHaskell: 0.00%\nLisp: 0.00%\nScala: 0.16%\nSQL: 0.10%\nC: 1.69%\nCS: 0.01%\nPascal: 0.03%\nGroovy: 0.01%\nVisualBasic: 0.05%\nRuby: 0.40%\nObjectiveC: 0.00%\nDelphi: 0.07%\nFortran: 0.00%\nAssembly: 0.12%\nPerl: 0.02%'}],
+['ie' ,{v:100, f: '\nAda: 0.13%\nJava: 0.57%\nActionScript: 0.00%\nPython: 0.44%\nCPP: 0.38%\nSQL: 1.18%\nPerl: 0.32%\nFS: 0.00%\nHaskell: 0.15%\nPostScript: 0.02%\nPascal: 2.14%\nCS: 0.06%\nC: 7.64%\nObjectiveC: 0.00%\nAssembly: 1.31%\nFortran: 0.03%\nJavaScript: 80.47%\nMATLAB: 0.01%\nPHP: 0.55%\nLisp: 0.00%\nGroovy: 0.03%\nVisualBasic: 0.30%\nRuby: 3.97%\nScala: 0.16%\nDelphi: 0.14%'}],
+['il' ,{v:100, f: '\nC: 9.02%\nCS: 0.81%\nPascal: 0.21%\nSQL: 3.77%\nPerl: 6.21%\nVisualBasic: 0.21%\nObjectiveC: 0.09%\nGroovy: 0.02%\nLisp: 0.10%\nRuby: 0.58%\nPHP: 1.81%\nActionScript: 0.02%\nPython: 0.58%\nCPP: 0.81%\nDelphi: 0.04%\nScala: 0.32%\nAssembly: 2.65%\nFortran: 0.05%\nAda: 0.33%\nJava: 1.52%\nFS: 0.03%\nHaskell: 0.05%\nPostScript: 0.06%\nJavaScript: 70.62%\nMATLAB: 0.09%'}],
+['im' ,{v:100, f: '\nHaskell: 0.89%\nFortran: 0.07%\nAssembly: 0.86%\nPerl: 3.27%\nSQL: 4.82%\nPostScript: 0.07%\nJava: 8.06%\nAda: 5.22%\nLisp: 0.07%\nScala: 8.36%\nPHP: 6.41%\nMATLAB: 0.03%\nJavaScript: 22.85%\nCPP: 10.04%\nPython: 2.44%\nActionScript: 0.03%\nRuby: 4.03%\nObjectiveC: 0.40%\nC: 20.24%\nCS: 0.50%\nPascal: 1.16%\nDelphi: 0.10%\nFS: 0.10%'}],
+['in' ,{v:100, f: '\nGroovy: 0.09%\nJavaScript: 60.15%\nObjectiveC: 0.02%\nPython: 0.51%\nPascal: 0.31%\nAda: 0.58%\nFortran: 0.16%\nRuby: 0.83%\nAssembly: 3.30%\nJava: 3.71%\nCS: 0.53%\nC: 14.65%\nActionScript: 0.03%\nSQL: 3.43%\nPHP: 3.21%\nCPP: 0.88%\nScala: 0.16%\nMATLAB: 6.76%\nLisp: 0.02%\nVisualBasic: 0.29%\nPerl: 0.17%\nDelphi: 0.15%\nFS: 0.02%\nHaskell: 0.02%\nPostScript: 0.02%'}],
+['io' ,{v:100, f: '\nC: 2.08%\nJavaScript: 74.35%\nMATLAB: 0.02%\nPHP: 1.39%\nObjectiveC: 0.17%\nCS: 0.22%\nSQL: 3.57%\nRuby: 3.39%\nHaskell: 0.20%\nFS: 0.03%\nVisualBasic: 0.03%\nGroovy: 0.78%\nLisp: 0.14%\nAda: 0.08%\nJava: 7.93%\nAssembly: 0.15%\nFortran: 0.06%\nPostScript: 0.00%\nPerl: 0.35%\nPascal: 0.05%\nScala: 0.72%\nDelphi: 0.04%\nActionScript: 0.09%\nPython: 3.72%\nCPP: 0.46%'}],
+['iq' ,{v:100, f: '\nC: 25.30%\nPHP: 3.61%\nJavaScript: 39.76%\nAssembly: 31.33%'}],
+['ir' ,{v:100, f: '\nFS: 0.04%\nJavaScript: 13.11%\nMATLAB: 0.62%\nHaskell: 0.01%\nDelphi: 0.38%\nScala: 0.01%\nPHP: 27.11%\nPostScript: 0.01%\nFortran: 0.06%\nCS: 0.89%\nPascal: 0.23%\nLisp: 0.00%\nC: 13.90%\nVisualBasic: 1.28%\nObjectiveC: 0.01%\nAssembly: 5.38%\nSQL: 16.37%\nCPP: 1.03%\nPython: 0.59%\nRuby: 0.16%\nActionScript: 0.09%\nAda: 0.29%\nPerl: 0.14%\nGroovy: 0.01%\nJava: 18.29%'}],
+['is' ,{v:100, f: '\nSQL: 0.73%\nAssembly: 10.32%\nFortran: 0.07%\nPascal: 6.62%\nCS: 0.34%\nC: 31.56%\nFS: 0.06%\nHaskell: 0.23%\nPostScript: 0.06%\nJava: 4.48%\nAda: 7.96%\nObjectiveC: 0.08%\nDelphi: 1.36%\nScala: 0.62%\nRuby: 2.80%\nActionScript: 0.06%\nPython: 1.92%\nCPP: 0.42%\nLisp: 0.09%\nGroovy: 1.42%\nVisualBasic: 0.17%\nJavaScript: 24.09%\nMATLAB: 0.08%\nPHP: 4.07%\nPerl: 0.39%'}],
+['it' ,{v:100, f: '\nFS: 0.00%\nPostScript: 0.01%\nAssembly: 0.38%\nFortran: 0.03%\nRuby: 0.65%\nJavaScript: 82.93%\nMATLAB: 1.34%\nPHP: 0.81%\nActionScript: 0.06%\nPython: 0.30%\nScala: 1.43%\nDelphi: 0.07%\nC: 7.28%\nCS: 0.06%\nPascal: 0.37%\nHaskell: 0.01%\nCPP: 0.21%\nPerl: 0.23%\nSQL: 0.89%\nAda: 0.29%\nJava: 2.49%\nLisp: 0.01%\nGroovy: 0.03%\nVisualBasic: 0.09%\nObjectiveC: 0.01%'}],
+['je' ,{v:100, f: '\nVisualBasic: 2.07%\nSQL: 0.30%\nPHP: 3.55%\nJavaScript: 23.96%\nJava: 0.59%\nC: 42.60%\nCPP: 0.89%\nAssembly: 26.04%'}],
+['jm' ,{v:100, f: '\nPerl: 0.89%\nSQL: 0.89%\nAssembly: 16.10%\nCPP: 1.04%\nJava: 7.75%\nVisualBasic: 0.45%\nC: 24.29%\nJavaScript: 23.25%\nAda: 0.30%\nRuby: 0.30%\nCS: 1.49%\nPHP: 23.25%'}],
+['jo' ,{v:100, f: '\nPHP: 0.45%\nSQL: 1.23%\nCS: 0.65%\nC: 14.79%\nRuby: 0.19%\nAssembly: 37.87%\nJavaScript: 40.27%\nPascal: 0.78%\nCPP: 1.04%\nJava: 1.49%\nVisualBasic: 1.23%'}],
+['jp' ,{v:100, f: '\nMATLAB: 2.95%\nFortran: 0.07%\nAssembly: 0.61%\nObjectiveC: 0.02%\nLisp: 0.06%\nRuby: 2.02%\nGroovy: 0.03%\nCPP: 0.32%\nPython: 0.25%\nActionScript: 0.01%\nPHP: 0.39%\nVisualBasic: 0.05%\nPerl: 0.22%\nSQL: 1.39%\nScala: 0.08%\nDelphi: 0.05%\nC: 19.81%\nCS: 0.05%\nPascal: 0.19%\nAda: 0.15%\nJava: 0.80%\nPostScript: 0.42%\nHaskell: 0.03%\nFS: 0.01%\nJavaScript: 70.04%'}],
+['ke' ,{v:100, f: '\nVisualBasic: 0.18%\nGroovy: 0.02%\nLisp: 0.01%\nPascal: 0.17%\nScala: 0.07%\nPHP: 2.18%\nJava: 2.74%\nAda: 0.08%\nPerl: 0.13%\nMATLAB: 0.10%\nJavaScript: 49.43%\nSQL: 1.86%\nRuby: 1.18%\nObjectiveC: 0.03%\nC: 7.78%\nCS: 0.41%\nFortran: 0.02%\nAssembly: 32.52%\nHaskell: 0.04%\nFS: 0.02%\nCPP: 0.28%\nPython: 0.72%\nActionScript: 0.03%'}],
+['kg' ,{v:100, f: '\nAssembly: 4.71%\nSQL: 6.09%\nJavaScript: 61.22%\nCPP: 1.94%\nC: 12.74%\nPHP: 8.86%\nJava: 4.43%'}],
+['kh' ,{v:100, f: '\nPerl: 1.01%\nSQL: 2.26%\nC: 13.82%\nPHP: 6.53%\nJavaScript: 18.09%\nPython: 0.50%\nCPP: 1.51%\nAssembly: 53.27%\nJava: 3.02%'}],
+['ki' ,{v:100, f: '\nAssembly: 57.14%\nPHP: 7.14%\nJavaScript: 28.57%\nRuby: 7.14%'}],
+['km' ,{v:100, f: '\nAssembly: 50.00%\nPascal: 50.00%'}],
+['kn' ,{v:100, f: '\nAssembly: 86.67%\nPython: 13.33%'}],
+['kp' ,{v:100, f: '\nAssembly: 100.00%'}],
+['kr' ,{v:100, f: '\nFS: 0.00%\nHaskell: 0.00%\nPostScript: 0.00%\nObjectiveC: 0.00%\nFortran: 0.02%\nAssembly: 0.13%\nJava: 0.26%\nAda: 0.09%\nRuby: 0.12%\nC: 0.97%\nCS: 0.01%\nPascal: 0.01%\nDelphi: 0.03%\nScala: 0.14%\nLisp: 0.00%\nGroovy: 0.00%\nVisualBasic: 0.01%\nActionScript: 0.00%\nPython: 0.00%\nCPP: 0.06%\nPHP: 0.03%\nMATLAB: 1.49%\nJavaScript: 96.53%\nSQL: 0.08%\nPerl: 0.01%'}],
+['kw' ,{v:100, f: '\nCPP: 1.75%\nSQL: 2.11%\nJava: 4.21%\nJavaScript: 48.42%\nPHP: 0.88%\nC: 17.89%\nRuby: 0.35%\nCS: 0.88%\nAssembly: 23.51%'}],
+['ky' ,{v:100, f: '\nAssembly: 45.38%\nPHP: 0.38%\nJava: 8.85%\nJavaScript: 22.31%\nHaskell: 0.77%\nC: 22.31%'}],
+['kz' ,{v:100, f: '\nJavaScript: 55.82%\nSQL: 1.65%\nAssembly: 12.43%\nC: 14.94%\nPython: 0.57%\nScala: 0.65%\nDelphi: 0.07%\nVisualBasic: 0.57%\nPHP: 6.97%\nRuby: 0.50%\nJava: 4.24%\nAda: 0.22%\nPascal: 0.93%\nPerl: 0.43%'}],
+['la' ,{v:100, f: '\nC: 28.96%\nCS: 0.46%\nPascal: 1.43%\nScala: 1.01%\nHaskell: 0.13%\nAda: 0.51%\nGroovy: 0.59%\nPython: 1.22%\nAssembly: 12.90%\nObjectiveC: 0.08%\nRuby: 2.57%\nPHP: 4.93%\nJavaScript: 34.27%\nDelphi: 0.38%\nCPP: 1.31%\nPerl: 0.30%\nSQL: 4.22%\nVisualBasic: 0.38%\nJava: 4.34%'}],
+['lb' ,{v:100, f: '\nAssembly: 3.65%\nJavaScript: 95.22%\nMATLAB: 0.00%\nPHP: 0.02%\nC: 0.60%\nPython: 0.06%\nHaskell: 0.01%\nFS: 0.01%\nCS: 0.01%\nPascal: 0.18%\nSQL: 0.04%\nScala: 0.02%\nJava: 0.15%\nAda: 0.03%\nRuby: 0.01%'}],
+['lc' ,{v:100, f: '\nJava: 5.66%\nPHP: 20.75%\nC: 28.30%\nSQL: 11.32%\nRuby: 1.89%\nAssembly: 28.30%\nJavaScript: 3.77%'}],
+['li' ,{v:100, f: '\nFS: 0.23%\nSQL: 2.76%\nPerl: 2.53%\nAda: 0.47%\nObjectiveC: 0.19%\nScala: 0.61%\nCPP: 3.33%\nHaskell: 5.39%\nCS: 1.36%\nC: 20.14%\nPostScript: 0.09%\nJavaScript: 25.81%\nMATLAB: 0.05%\nPHP: 9.98%\nPython: 2.67%\nAssembly: 8.29%\nFortran: 0.09%\nJava: 10.26%\nLisp: 0.42%\nGroovy: 0.19%\nVisualBasic: 0.98%\nRuby: 2.25%\nPascal: 1.92%'}],
+['lk' ,{v:100, f: '\nCPP: 0.24%\nPHP: 1.98%\nMATLAB: 0.11%\nJavaScript: 34.70%\nPascal: 0.82%\nCS: 3.74%\nC: 21.96%\nVisualBasic: 0.32%\nHaskell: 0.07%\nAda: 20.23%\nScala: 0.04%\nDelphi: 0.04%\nPython: 0.07%\nActionScript: 0.01%\nRuby: 0.77%\nPerl: 0.16%\nSQL: 4.32%\nAssembly: 5.07%\nJava: 5.37%'}],
+['lr' ,{v:100, f: '\nJavaScript: 91.89%\nAssembly: 8.11%'}],
+['ls' ,{v:100, f: '\nSQL: 1.60%\nJavaScript: 39.89%\nJava: 3.72%\nAssembly: 43.62%\nC: 11.17%'}],
+['lt' ,{v:100, f: '\nRuby: 0.69%\nJava: 2.56%\nAda: 0.84%\nFortran: 0.03%\nAssembly: 8.17%\nDelphi: 0.13%\nScala: 0.73%\nC: 43.10%\nCS: 0.23%\nPascal: 0.33%\nActionScript: 0.05%\nPython: 0.92%\nCPP: 1.18%\nJavaScript: 30.76%\nMATLAB: 0.04%\nPHP: 5.98%\nFS: 0.05%\nHaskell: 0.02%\nPostScript: 0.07%\nPerl: 0.18%\nSQL: 3.54%\nObjectiveC: 0.02%\nVisualBasic: 0.35%\nGroovy: 0.04%\nLisp: 0.01%'}],
+['lu' ,{v:100, f: '\nC: 27.37%\nCS: 0.15%\nPascal: 3.39%\nJava: 2.41%\nAda: 0.28%\nFS: 0.07%\nPostScript: 0.05%\nDelphi: 0.16%\nScala: 0.21%\nObjectiveC: 0.43%\nActionScript: 0.01%\nPython: 0.50%\nCPP: 0.31%\nRuby: 0.41%\nJavaScript: 49.82%\nPHP: 1.65%\nGroovy: 0.01%\nVisualBasic: 6.54%\nPerl: 0.65%\nSQL: 1.15%\nAssembly: 4.42%'}],
+['lv' ,{v:100, f: '\nScala: 0.22%\nVisualBasic: 0.20%\nGroovy: 0.20%\nLisp: 0.07%\nMATLAB: 0.07%\nAda: 0.75%\nJava: 1.85%\nRuby: 0.62%\nPHP: 2.46%\nObjectiveC: 0.01%\nDelphi: 0.23%\nFortran: 0.10%\nAssembly: 1.31%\nPostScript: 0.11%\nFS: 0.03%\nJavaScript: 17.54%\nC: 67.63%\nCS: 0.15%\nPascal: 0.36%\nCPP: 0.55%\nPython: 0.38%\nActionScript: 0.07%\nPerl: 4.13%\nSQL: 1.00%'}],
+['ly' ,{v:100, f: '\nAssembly: 39.31%\nObjectiveC: 1.01%\nJavaScript: 15.97%\nAda: 0.25%\nJava: 2.84%\nPHP: 6.33%\nLisp: 0.04%\nGroovy: 0.19%\nScala: 0.48%\nPascal: 0.19%\nCS: 0.15%\nC: 7.72%\nVisualBasic: 0.04%\nDelphi: 0.02%\nCPP: 0.63%\nActionScript: 0.46%\nPython: 5.22%\nPostScript: 0.04%\nHaskell: 0.27%\nSQL: 4.48%\nPerl: 4.54%\nMATLAB: 1.64%\nRuby: 8.16%'}],
+['ma' ,{v:100, f: '\nAssembly: 1.05%\nPerl: 0.08%\nSQL: 0.80%\nC: 31.62%\nCS: 0.43%\nPascal: 1.03%\nVisualBasic: 0.13%\nGroovy: 0.15%\nDelphi: 0.10%\nScala: 0.08%\nAda: 0.23%\nJava: 2.00%\nRuby: 10.12%\nJavaScript: 48.62%\nMATLAB: 0.03%\nPHP: 3.03%\nPython: 0.13%\nHaskell: 0.03%\nPostScript: 0.10%\nCPP: 0.28%'}],
+['mc' ,{v:100, f: '\nPascal: 4.26%\nC: 81.12%\nJavaScript: 1.58%\nAssembly: 12.55%\nScala: 0.50%'}],
+['md' ,{v:100, f: '\nRuby: 0.13%\nMATLAB: 0.03%\nScala: 0.16%\nDelphi: 0.05%\nVisualBasic: 0.10%\nJava: 2.12%\nC: 14.05%\nAda: 0.33%\nJavaScript: 44.82%\nSQL: 2.12%\nCS: 0.40%\nPascal: 0.49%\nPHP: 28.91%\nHaskell: 0.06%\nCPP: 0.48%\nPerl: 0.21%\nAssembly: 5.55%'}],
+['me' ,{v:100, f: '\nHaskell: 0.10%\nActionScript: 0.12%\nPython: 1.28%\nCPP: 0.53%\nJavaScript: 38.19%\nMATLAB: 0.07%\nPHP: 2.11%\nPerl: 0.10%\nSQL: 1.00%\nVisualBasic: 0.30%\nGroovy: 0.29%\nLisp: 0.10%\nRuby: 41.12%\nObjectiveC: 0.09%\nPostScript: 0.01%\nFS: 0.04%\nPascal: 0.17%\nCS: 0.84%\nC: 9.06%\nAssembly: 0.58%\nFortran: 0.05%\nJava: 2.57%\nAda: 0.86%\nDelphi: 0.28%\nScala: 0.16%'}],
+['mg' ,{v:100, f: '\nAssembly: 3.48%\nJavaScript: 54.35%\nPHP: 9.57%\nPascal: 12.17%\nC: 20.43%'}],
+['mk' ,{v:100, f: '\nMATLAB: 0.05%\nCPP: 0.73%\nAssembly: 10.88%\nPascal: 0.33%\nCS: 0.14%\nC: 34.04%\nSQL: 3.20%\nDelphi: 3.53%\nJava: 9.90%\nRuby: 1.41%\nScala: 0.11%\nPHP: 10.71%\nPerl: 3.23%\nGroovy: 0.05%\nVisualBasic: 0.27%\nPython: 0.14%\nJavaScript: 21.29%'}],
+['ml' ,{v:100, f: '\nJavaScript: 60.24%\nMATLAB: 1.81%\nPHP: 7.23%\nAda: 16.27%\nJava: 3.61%\nC: 9.64%\nPerl: 1.20%'}],
+['mm' ,{v:100, f: '\nRuby: 11.04%\nJava: 1.23%\nC: 22.70%\nPHP: 3.07%\nJavaScript: 55.83%\nAssembly: 5.52%\nCPP: 0.61%'}],
+['mn' ,{v:100, f: '\nRuby: 2.82%\nJavaScript: 23.53%\nPHP: 11.24%\nCPP: 0.53%\nDelphi: 0.18%\nAssembly: 3.41%\nJava: 25.88%\nAda: 1.00%\nSQL: 1.24%\nC: 27.65%\nCS: 0.06%\nPascal: 0.76%\nActionScript: 0.12%\nVisualBasic: 0.82%\nGroovy: 0.47%\nPython: 0.29%'}],
+['mo' ,{v:100, f: '\nJavaScript: 42.08%\nC: 16.10%\nAda: 2.34%\nRuby: 0.78%\nGroovy: 0.26%\nAssembly: 31.69%\nSQL: 5.45%\nJava: 1.04%\nFS: 0.26%'}],
+['mp' ,{v:100, f: '\nJava: 4.23%\nPHP: 18.31%\nVisualBasic: 2.82%\nC: 12.68%\nHaskell: 2.82%\nSQL: 2.82%\nRuby: 2.82%\nJavaScript: 32.39%\nObjectiveC: 1.41%\nPython: 16.90%\nPerl: 2.82%'}],
+['mq' ,{v:100, f: '\nJavaScript: 61.90%\nC: 38.10%'}],
+['mr' ,{v:100, f: '\nPHP: 3.45%\nSQL: 3.45%\nJavaScript: 68.97%\nC: 24.14%'}],
+['ms' ,{v:100, f: '\nLisp: 0.08%\nVisualBasic: 10.39%\nPascal: 0.43%\nPerl: 1.91%\nActionScript: 0.02%\nPython: 0.33%\nCPP: 3.38%\nPostScript: 0.01%\nHaskell: 0.02%\nFS: 0.50%\nAssembly: 1.44%\nFortran: 0.01%\nAda: 0.28%\nRuby: 2.01%\nC: 4.65%\nCS: 13.95%\nScala: 0.11%\nDelphi: 0.45%\nJava: 2.23%\nObjectiveC: 0.16%\nJavaScript: 19.63%\nSQL: 34.60%\nPHP: 3.41%'}],
+['mt' ,{v:100, f: '\nJavaScript: 20.43%\nPHP: 5.43%\nJava: 6.43%\nRuby: 0.77%\nAssembly: 14.08%\nPascal: 1.45%\nScala: 1.15%\nCPP: 1.61%\nCS: 2.68%\nC: 38.71%\nGroovy: 0.31%\nPerl: 0.23%\nSQL: 6.43%\nDelphi: 0.31%'}],
+['mu' ,{v:100, f: '\nGroovy: 4.14%\nCPP: 0.37%\nPython: 1.62%\nActionScript: 0.04%\nVisualBasic: 0.37%\nSQL: 0.58%\nScala: 1.41%\nDelphi: 0.04%\nRuby: 4.47%\nPascal: 3.15%\nCS: 1.24%\nAda: 1.91%\nJava: 6.71%\nJavaScript: 8.33%\nC: 57.71%\nAssembly: 4.35%\nPHP: 1.74%\nFS: 1.82%'}],
+['mv' ,{v:100, f: '\nJavaScript: 33.33%\nAssembly: 26.90%\nC: 37.43%\nPHP: 2.34%'}],
+['mw' ,{v:100, f: '\nJavaScript: 23.85%\nPerl: 2.31%\nAssembly: 32.31%\nJava: 6.15%\nAda: 2.31%\nPHP: 4.62%\nC: 28.46%'}],
+['mx' ,{v:100, f: '\nDelphi: 0.07%\nRuby: 0.25%\nActionScript: 0.00%\nFortran: 0.01%\nAssembly: 0.11%\nJava: 0.39%\nPascal: 0.06%\nPerl: 0.01%\nC: 2.84%\nPostScript: 0.00%\nPython: 0.01%\nFS: 0.00%\nCS: 0.02%\nCPP: 0.02%\nObjectiveC: 0.00%\nMATLAB: 0.00%\nSQL: 0.85%\nScala: 0.19%\nJavaScript: 93.84%\nPHP: 1.10%\nVisualBasic: 0.03%\nGroovy: 0.02%\nLisp: 0.00%\nAda: 0.14%\nHaskell: 0.01%'}],
+['my' ,{v:100, f: '\nScala: 0.13%\nGroovy: 0.01%\nVisualBasic: 0.09%\nDelphi: 0.03%\nFS: 0.00%\nPascal: 0.16%\nAssembly: 0.62%\nFortran: 0.03%\nCS: 0.03%\nC: 3.08%\nPHP: 0.59%\nMATLAB: 0.05%\nJavaScript: 91.50%\nRuby: 0.47%\nHaskell: 0.00%\nObjectiveC: 0.00%\nAda: 2.19%\nJava: 0.51%\nSQL: 0.37%\nPerl: 0.04%\nLisp: 0.00%\nPostScript: 0.00%\nActionScript: 0.00%\nPython: 0.03%\nCPP: 0.05%'}],
+['mz' ,{v:100, f: '\nC: 25.70%\nPHP: 4.02%\nAssembly: 10.04%\nPerl: 0.80%\nJavaScript: 56.22%\nJava: 3.21%'}],
+['na' ,{v:100, f: '\nC: 12.35%\nDelphi: 0.47%\nPython: 0.20%\nAssembly: 74.90%\nVisualBasic: 0.33%\nPascal: 0.13%\nPHP: 0.53%\nJavaScript: 8.08%\nRuby: 2.00%\nJava: 0.80%\nSQL: 0.20%'}],
+['nc' ,{v:100, f: '\nJavaScript: 39.92%\nPHP: 1.25%\nVisualBasic: 0.70%\nJava: 0.14%\nPerl: 0.56%\nC: 9.18%\nPascal: 48.26%'}],
+['ne' ,{v:100, f: '\nPHP: 100.00%'}],
+['nf' ,{v:100, f: '\nC: 16.67%\nPython: 3.70%\nPHP: 31.48%\nCPP: 3.70%\nSQL: 5.56%\nAssembly: 14.81%\nJavaScript: 14.81%\nPerl: 3.70%\nJava: 5.56%'}],
+['ng' ,{v:100, f: '\nVisualBasic: 0.08%\nSQL: 0.56%\nAssembly: 38.63%\nFortran: 0.03%\nC: 12.58%\nCS: 0.02%\nPascal: 0.72%\nJava: 3.50%\nAda: 0.66%\nDelphi: 0.02%\nScala: 0.06%\nPHP: 0.89%\nMATLAB: 0.02%\nJavaScript: 41.66%\nPython: 0.18%\nRuby: 0.39%'}],
+['ni' ,{v:100, f: '\nJavaScript: 29.47%\nPHP: 1.77%\nPerl: 0.27%\nSQL: 19.05%\nDelphi: 0.14%\nJava: 18.57%\nAda: 1.29%\nAssembly: 5.94%\nVisualBasic: 0.61%\nLisp: 0.10%\nC: 21.70%\nCS: 0.07%\nPascal: 0.24%\nRuby: 0.14%\nScala: 0.14%\nPython: 0.34%\nCPP: 0.17%'}],
+['nl' ,{v:100, f: '\nMATLAB: 2.38%\nCPP: 0.13%\nPerl: 0.07%\nSQL: 0.90%\nPython: 0.19%\nActionScript: 0.01%\nVisualBasic: 0.04%\nGroovy: 0.07%\nLisp: 0.01%\nScala: 0.29%\nDelphi: 0.13%\nRuby: 0.37%\nAda: 0.22%\nJava: 1.96%\nPHP: 0.70%\nObjectiveC: 0.01%\nPostScript: 0.03%\nHaskell: 0.02%\nFS: 0.01%\nFortran: 0.03%\nAssembly: 0.30%\nC: 4.51%\nCS: 0.08%\nPascal: 0.27%\nJavaScript: 87.28%'}],
+['no' ,{v:100, f: '\nSQL: 10.94%\nRuby: 0.90%\nScala: 0.28%\nDelphi: 0.15%\nMATLAB: 0.24%\nJavaScript: 55.93%\nJava: 3.21%\nAda: 0.49%\nVisualBasic: 0.10%\nAssembly: 1.67%\nFortran: 0.11%\nC: 20.63%\nCS: 0.32%\nPascal: 0.54%\nGroovy: 0.03%\nObjectiveC: 0.02%\nLisp: 0.04%\nPHP: 1.56%\nPostScript: 0.10%\nHaskell: 0.09%\nFS: 0.01%\nCPP: 0.46%\nPython: 0.59%\nActionScript: 0.01%\nPerl: 1.60%'}],
+['np' ,{v:100, f: '\nDelphi: 0.06%\nRuby: 1.13%\nAssembly: 24.97%\nFortran: 0.09%\nAda: 0.43%\nPerl: 0.64%\nSQL: 10.64%\nPython: 0.64%\nCPP: 0.24%\nPHP: 24.73%\nMATLAB: 0.21%\nJavaScript: 21.50%\nPascal: 0.06%\nCS: 0.46%\nJava: 3.35%\nC: 10.71%\nVisualBasic: 0.15%'}],
+['nr' ,{v:100, f: '\nPHP: 40.71%\nJavaScript: 7.14%\nPython: 3.57%\nAda: 4.29%\nJava: 7.14%\nAssembly: 2.86%\nCPP: 5.71%\nCS: 0.71%\nSQL: 2.14%\nPerl: 6.43%\nRuby: 7.14%\nVisualBasic: 1.43%\nC: 10.71%'}],
+['nu' ,{v:100, f: '\nAda: 0.75%\nScala: 0.63%\nDelphi: 0.13%\nPerl: 0.65%\nSQL: 2.55%\nC: 37.35%\nCS: 0.44%\nRuby: 12.56%\nObjectiveC: 0.09%\nFS: 0.01%\nHaskell: 0.04%\nPostScript: 0.05%\nPascal: 5.85%\nActionScript: 0.01%\nPython: 11.37%\nCPP: 0.44%\nVisualBasic: 0.22%\nGroovy: 0.81%\nLisp: 0.06%\nJavaScript: 13.73%\nMATLAB: 0.01%\nPHP: 7.44%\nAssembly: 1.54%\nFortran: 0.05%\nJava: 3.22%'}],
+['nz' ,{v:100, f: '\nJavaScript: 36.65%\nDelphi: 0.30%\nScala: 0.20%\nActionScript: 0.02%\nPython: 1.83%\nMATLAB: 0.03%\nLisp: 0.02%\nGroovy: 0.75%\nVisualBasic: 0.12%\nPerl: 1.13%\nSQL: 2.72%\nCPP: 0.55%\nJava: 2.21%\nAda: 0.77%\nRuby: 6.17%\nFortran: 0.03%\nAssembly: 9.36%\nCS: 0.60%\nPascal: 1.26%\nHaskell: 0.68%\nPHP: 2.07%\nPostScript: 0.07%\nC: 32.40%\nFS: 0.03%\nObjectiveC: 0.05%'}],
+['om' ,{v:100, f: '\nSQL: 3.96%\nPerl: 0.42%\nJava: 4.17%\nC: 19.79%\nJavaScript: 64.79%\nMATLAB: 0.42%\nPHP: 1.04%\nAssembly: 4.79%\nVisualBasic: 0.63%'}],
+['pa' ,{v:100, f: '\nScala: 0.42%\nSQL: 1.57%\nC: 53.19%\nDelphi: 0.14%\nAssembly: 0.83%\nAda: 0.83%\nRuby: 0.83%\nCS: 0.19%\nPascal: 0.42%\nPHP: 24.93%\nVisualBasic: 0.09%\nJava: 0.83%\nJavaScript: 15.36%\nHaskell: 0.37%'}],
+['pe' ,{v:100, f: '\nPascal: 0.25%\nDelphi: 0.04%\nScala: 0.20%\nSQL: 1.26%\nPerl: 0.04%\nPostScript: 0.03%\nCPP: 0.20%\nHaskell: 0.00%\nGroovy: 11.35%\nVisualBasic: 0.33%\nCS: 0.05%\nC: 28.35%\nActionScript: 0.01%\nAssembly: 0.16%\nPython: 0.24%\nAda: 1.21%\nJava: 1.59%\nJavaScript: 15.74%\nMATLAB: 0.04%\nRuby: 0.54%\nPHP: 38.38%'}],
+['pf' ,{v:100, f: '\nJavaScript: 64.66%\nRuby: 1.20%\nPHP: 4.02%\nJava: 2.01%\nC: 19.28%\nPascal: 8.84%'}],
+['pg' ,{v:100, f: '\nVisualBasic: 2.42%\nSQL: 2.42%\nJava: 4.84%\nAssembly: 13.71%\nJavaScript: 48.39%\nC: 28.23%'}],
+['ph' ,{v:100, f: '\nAda: 0.26%\nJava: 2.02%\nObjectiveC: 0.01%\nGroovy: 0.03%\nVisualBasic: 0.20%\nSQL: 0.65%\nDelphi: 0.06%\nPerl: 0.05%\nCS: 0.16%\nC: 17.73%\nPHP: 26.73%\nMATLAB: 0.01%\nJavaScript: 37.93%\nFortran: 0.00%\nAssembly: 5.01%\nScala: 0.03%\nCPP: 0.19%\nPython: 1.00%\nRuby: 7.84%\nPascal: 0.08%\nFS: 0.01%\nPostScript: 0.01%\nLisp: 0.00%'}],
+['pk' ,{v:100, f: '\nPascal: 0.09%\nCS: 0.12%\nC: 15.51%\nScala: 0.00%\nFortran: 0.01%\nPerl: 0.02%\nCPP: 0.12%\nRuby: 0.48%\nPostScript: 0.00%\nAda: 0.16%\nPython: 0.06%\nActionScript: 0.02%\nDelphi: 0.01%\nAssembly: 15.48%\nFS: 0.01%\nObjectiveC: 0.00%\nSQL: 0.42%\nVisualBasic: 0.07%\nPHP: 1.57%\nMATLAB: 0.06%\nJavaScript: 64.11%\nJava: 1.68%'}],
+['pl' ,{v:100, f: '\nPascal: 1.72%\nRuby: 0.83%\nFortran: 0.03%\nAssembly: 0.45%\nPHP: 4.60%\nJava: 5.39%\nAda: 1.38%\nCS: 0.48%\nObjectiveC: 0.03%\nC: 45.51%\nJavaScript: 32.03%\nFS: 0.02%\nHaskell: 0.05%\nPostScript: 0.11%\nPerl: 0.15%\nSQL: 2.63%\nLisp: 0.02%\nGroovy: 0.09%\nActionScript: 0.09%\nPython: 0.57%\nCPP: 0.93%\nDelphi: 0.62%\nScala: 0.51%\nMATLAB: 0.06%\nVisualBasic: 1.70%'}],
+['pm' ,{v:100, f: '\nPostScript: 19.67%\nC: 6.01%\nJavaScript: 44.26%\nPHP: 0.55%\nRuby: 1.64%\nPerl: 23.50%\nSQL: 2.73%\nPython: 1.64%'}],
+['pn' ,{v:100, f: '\nPHP: 5.19%\nSQL: 0.65%\nPython: 0.65%\nLisp: 0.65%\nC: 14.29%\nCS: 0.65%\nPascal: 7.14%\nJavaScript: 64.29%\nCPP: 0.65%\nAssembly: 0.65%\nVisualBasic: 0.65%\nAda: 1.30%\nJava: 2.60%\nDelphi: 0.65%'}],
+['pr' ,{v:100, f: '\nC: 72.36%\nAda: 0.74%\nJavaScript: 13.27%\nCS: 1.35%\nAssembly: 0.98%\nPerl: 1.11%\nRuby: 0.12%\nPython: 1.72%\nSQL: 1.47%\nVisualBasic: 0.49%\nGroovy: 0.49%\nJava: 1.23%\nPHP: 4.67%'}],
+['ps' ,{v:100, f: '\nC: 27.22%\nCPP: 1.11%\nPython: 0.83%\nAssembly: 15.97%\nPerl: 1.11%\nSQL: 2.36%\nJavaScript: 34.72%\nMATLAB: 1.53%\nPHP: 3.75%\nDelphi: 1.11%\nAda: 0.28%\nJava: 5.56%\nVisualBasic: 1.67%\nPascal: 0.56%\nCS: 2.22%'}],
+['pt' ,{v:100, f: '\nPascal: 3.57%\nC: 34.31%\nLisp: 0.03%\nAda: 0.23%\nJava: 3.39%\nPostScript: 0.06%\nHaskell: 0.15%\nFS: 0.06%\nActionScript: 0.05%\nPython: 0.48%\nCPP: 0.24%\nGroovy: 0.15%\nVisualBasic: 2.65%\nObjectiveC: 0.02%\nCS: 0.52%\nRuby: 1.11%\nDelphi: 0.35%\nScala: 0.25%\nPHP: 5.37%\nMATLAB: 0.29%\nJavaScript: 42.23%\nFortran: 0.35%\nAssembly: 2.36%\nPerl: 0.57%\nSQL: 1.23%'}],
+['pw' ,{v:100, f: '\nMATLAB: 0.17%\nCPP: 0.09%\nSQL: 0.62%\nC: 2.63%\nCS: 0.14%\nAssembly: 0.19%\nRuby: 0.26%\nGroovy: 0.09%\nVisualBasic: 0.09%\nPHP: 0.74%\nPython: 0.43%\nAda: 1.42%\nJava: 77.64%\nDelphi: 0.07%\nHaskell: 0.09%\nJavaScript: 15.32%'}],
+['py' ,{v:100, f: '\nRuby: 0.37%\nC: 52.22%\nScala: 0.09%\nDelphi: 0.06%\nAda: 0.92%\nPython: 0.09%\nCS: 0.18%\nPascal: 0.12%\nObjectiveC: 0.06%\nPerl: 0.37%\nPHP: 2.66%\nCPP: 0.46%\nSQL: 3.97%\nAssembly: 0.06%\nVisualBasic: 0.76%\nJava: 2.26%\nJavaScript: 35.35%'}],
+['qa' ,{v:100, f: '\nMATLAB: 0.95%\nJavaScript: 14.21%\nVisualBasic: 1.08%\nAda: 0.54%\nJava: 5.28%\nFortran: 0.41%\nAssembly: 18.13%\nC: 50.88%\nPascal: 0.68%\nRuby: 0.68%\nSQL: 2.84%\nDelphi: 0.95%\nPHP: 3.38%'}],
+['re' ,{v:100, f: '\nAda: 0.70%\nJava: 1.05%\nPerl: 2.63%\nSQL: 1.40%\nPascal: 11.23%\nCS: 0.18%\nC: 20.00%\nCPP: 0.88%\nPython: 9.47%\nRuby: 2.81%\nPHP: 5.09%\nJavaScript: 41.75%\nVisualBasic: 1.40%\nScala: 0.18%\nAssembly: 1.23%'}],
+['ro' ,{v:100, f: '\nC: 49.77%\nJavaScript: 26.80%\nCS: 0.31%\nPascal: 1.66%\nRuby: 3.66%\nDelphi: 0.74%\nMATLAB: 0.03%\nFortran: 0.04%\nActionScript: 0.04%\nPython: 0.43%\nObjectiveC: 0.01%\nScala: 0.98%\nSQL: 2.03%\nPerl: 0.23%\nJava: 3.01%\nAda: 1.96%\nFS: 0.02%\nHaskell: 0.03%\nPostScript: 0.05%\nAssembly: 0.40%\nLisp: 0.01%\nGroovy: 0.05%\nVisualBasic: 0.34%\nCPP: 0.82%\nPHP: 6.59%'}],
+['rs' ,{v:100, f: '\nFS: 0.01%\nActionScript: 0.01%\nVisualBasic: 0.31%\nGroovy: 0.04%\nAda: 3.13%\nPerl: 0.17%\nDelphi: 0.17%\nScala: 0.15%\nLisp: 0.02%\nRuby: 0.19%\nSQL: 0.53%\nCPP: 0.26%\nPascal: 0.09%\nFortran: 0.05%\nCS: 0.27%\nAssembly: 44.66%\nPython: 0.12%\nPHP: 1.96%\nC: 19.44%\nObjectiveC: 0.01%\nMATLAB: 0.03%\nJavaScript: 26.18%\nJava: 2.15%\nPostScript: 0.02%\nHaskell: 0.01%'}],
+['ru' ,{v:100, f: '\nPascal: 0.05%\nC: 1.43%\nAda: 0.07%\nJava: 0.41%\nFS: 0.01%\nHaskell: 0.01%\nVisualBasic: 0.05%\nGroovy: 0.01%\nLisp: 0.01%\nAssembly: 0.18%\nFortran: 0.00%\nPHP: 0.31%\nMATLAB: 0.01%\nJavaScript: 96.39%\nCS: 0.04%\nRuby: 0.31%\nCPP: 0.09%\nPerl: 0.05%\nSQL: 0.21%\nPython: 0.06%\nActionScript: 0.01%\nObjectiveC: 0.00%\nPostScript: 0.01%\nScala: 0.18%\nDelphi: 0.11%'}],
+['rw' ,{v:100, f: '\nPerl: 0.45%\nAda: 0.45%\nAssembly: 27.45%\nRuby: 0.59%\nPHP: 1.19%\nJavaScript: 60.68%\nPython: 0.15%\nPascal: 3.12%\nC: 5.34%\nJava: 0.59%'}],
+['sa' ,{v:100, f: '\nSQL: 1.62%\nPerl: 0.17%\nVisualBasic: 0.20%\nJavaScript: 45.84%\nMATLAB: 0.67%\nAssembly: 7.67%\nC: 30.78%\nCS: 0.22%\nPascal: 0.48%\nJava: 8.04%\nPHP: 1.09%\nAda: 0.11%\nRuby: 0.39%\nPython: 0.11%\nDelphi: 0.14%\nCPP: 2.41%\nFortran: 0.06%'}],
+['sb' ,{v:100, f: '\nJava: 29.41%\nC: 35.29%\nAssembly: 35.29%'}],
+['sc' ,{v:100, f: '\nHaskell: 0.28%\nRuby: 6.96%\nSQL: 2.51%\nAssembly: 31.20%\nLisp: 0.28%\nVisualBasic: 1.11%\nJava: 20.61%\nC: 11.70%\nPascal: 0.56%\nScala: 1.39%\nPHP: 0.28%\nMATLAB: 0.84%\nJavaScript: 7.52%\nPython: 9.75%\nCPP: 4.74%\nFS: 0.28%'}],
+['sd' ,{v:100, f: '\nJavaScript: 84.89%\nPHP: 4.67%\nAssembly: 9.89%\nC: 0.55%'}],
+['se' ,{v:100, f: '\nLisp: 0.10%\nObjectiveC: 0.01%\nPerl: 0.16%\nJava: 0.81%\nActionScript: 0.01%\nC: 5.68%\nCS: 0.10%\nPascal: 0.25%\nSQL: 0.97%\nPython: 0.25%\nCPP: 0.29%\nRuby: 0.46%\nPHP: 0.26%\nMATLAB: 2.50%\nFortran: 0.10%\nAssembly: 0.39%\nAda: 0.22%\nPostScript: 0.02%\nHaskell: 0.02%\nFS: 0.02%\nJavaScript: 86.79%\nDelphi: 0.20%\nScala: 0.23%\nVisualBasic: 0.06%\nGroovy: 0.08%'}],
+['sg' ,{v:100, f: '\nJava: 0.56%\nAssembly: 0.31%\nFortran: 0.01%\nRuby: 0.85%\nActionScript: 0.00%\nPython: 0.05%\nCPP: 0.05%\nScala: 0.22%\nDelphi: 0.03%\nFS: 0.00%\nHaskell: 0.00%\nPostScript: 0.01%\nJavaScript: 90.97%\nPerl: 0.03%\nSQL: 3.56%\nMATLAB: 0.02%\nPHP: 0.58%\nObjectiveC: 0.00%\nPascal: 0.05%\nCS: 0.04%\nC: 2.47%\nVisualBasic: 0.01%\nGroovy: 0.05%\nLisp: 0.00%\nAda: 0.11%'}],
+['sh' ,{v:100, f: '\nPostScript: 0.00%\nActionScript: 0.01%\nPython: 0.92%\nCPP: 0.02%\nRuby: 0.07%\nAda: 0.00%\nJava: 0.22%\nPerl: 0.03%\nSQL: 0.02%\nPascal: 0.01%\nCS: 0.01%\nC: 0.13%\nJavaScript: 97.62%\nPHP: 0.94%\nObjectiveC: 0.01%\nScala: 0.00%'}],
+['si' ,{v:100, f: '\nCS: 0.58%\nFS: 0.02%\nHaskell: 0.07%\nPostScript: 0.06%\nAssembly: 2.91%\nFortran: 0.53%\nObjectiveC: 0.01%\nRuby: 0.38%\nC: 20.46%\nJava: 1.68%\nAda: 1.98%\nGroovy: 0.04%\nVisualBasic: 0.18%\nDelphi: 0.23%\nScala: 0.14%\nSQL: 4.09%\nPerl: 0.30%\nActionScript: 0.01%\nPython: 25.01%\nCPP: 7.93%\nPHP: 4.01%\nMATLAB: 0.21%\nJavaScript: 28.86%\nPascal: 0.32%'}],
+['sk' ,{v:100, f: '\nVisualBasic: 0.26%\nLisp: 0.04%\nAssembly: 0.63%\nFortran: 0.03%\nRuby: 0.83%\nScala: 0.30%\nDelphi: 2.27%\nActionScript: 0.10%\nPython: 0.37%\nCPP: 0.79%\nPostScript: 0.05%\nHaskell: 0.04%\nFS: 0.02%\nSQL: 2.22%\nPerl: 0.24%\nGroovy: 0.08%\nC: 24.23%\nCS: 0.50%\nPascal: 0.31%\nJava: 2.38%\nAda: 0.27%\nObjectiveC: 0.04%\nJavaScript: 57.25%\nMATLAB: 0.05%\nPHP: 6.69%'}],
+['sl' ,{v:100, f: '\nRuby: 12.20%\nC: 19.51%\nJavaScript: 29.27%\nPHP: 4.88%\nAssembly: 34.15%'}],
+['sm' ,{v:100, f: '\nPascal: 1.47%\nRuby: 1.18%\nJavaScript: 38.64%\nJava: 0.29%\nScala: 9.14%\nPHP: 0.29%\nVisualBasic: 0.88%\nSQL: 1.47%\nC: 46.61%'}],
+['sn' ,{v:100, f: '\nMATLAB: 0.96%\nAssembly: 2.15%\nFortran: 0.96%\nPHP: 3.11%\nVisualBasic: 0.48%\nC: 67.94%\nPython: 0.96%\nJavaScript: 16.03%\nPascal: 7.42%'}],
+['so' ,{v:100, f: '\nVisualBasic: 1.09%\nSQL: 1.31%\nPerl: 0.44%\nAda: 4.15%\nJava: 3.35%\nRuby: 17.53%\nJavaScript: 36.80%\nMATLAB: 0.07%\nPHP: 4.44%\nHaskell: 0.87%\nPython: 4.00%\nCPP: 0.80%\nPascal: 4.29%\nCS: 0.51%\nC: 17.53%\nAssembly: 2.11%\nDelphi: 0.15%\nGroovy: 0.58%'}],
+['sr' ,{v:100, f: '\nJava: 46.25%\nAssembly: 1.25%\nJavaScript: 50.63%\nPHP: 0.21%\nSQL: 0.83%\nGroovy: 0.83%'}],
+['st' ,{v:100, f: '\nObjectiveC: 0.37%\nHaskell: 0.22%\nPython: 3.03%\nCPP: 0.88%\nScala: 0.55%\nC: 8.99%\nCS: 5.63%\nPascal: 0.29%\nAssembly: 1.02%\nAda: 0.07%\nPHP: 4.75%\nJavaScript: 48.50%\nVisualBasic: 0.04%\nGroovy: 0.18%\nLisp: 0.26%\nRuby: 6.10%\nPerl: 8.19%\nSQL: 6.29%\nJava: 4.64%'}],
+['su' ,{v:100, f: '\nC: 23.45%\nPHP: 3.61%\nPostScript: 0.43%\nAssembly: 2.17%\nFortran: 6.01%\nAda: 1.38%\nHaskell: 0.13%\nJavaScript: 31.56%\nJava: 6.70%\nActionScript: 0.07%\nPython: 2.50%\nCPP: 1.67%\nScala: 0.03%\nMATLAB: 0.46%\nRuby: 3.15%\nGroovy: 0.16%\nLisp: 0.16%\nPerl: 1.35%\nSQL: 5.98%\nVisualBasic: 6.47%\nDelphi: 0.69%\nPascal: 1.48%\nCS: 0.39%'}],
+['sv' ,{v:100, f: '\nAssembly: 0.15%\nC: 57.40%\nPascal: 0.65%\nCS: 0.62%\nCPP: 0.12%\nRuby: 0.06%\nVisualBasic: 0.03%\nSQL: 1.70%\nAda: 0.96%\nScala: 0.12%\nJavaScript: 32.96%\nPHP: 3.46%\nJava: 1.67%\nPython: 0.09%'}],
+['sx' ,{v:100, f: '\nAssembly: 2.10%\nJava: 7.97%\nGroovy: 1.26%\nVisualBasic: 1.68%\nPHP: 4.62%\nMATLAB: 0.42%\nJavaScript: 3.99%\nFortran: 0.42%\nPascal: 3.36%\nC: 57.40%\nPerl: 0.42%\nSQL: 4.62%\nPostScript: 0.42%\nCPP: 3.36%\nPython: 3.78%\nActionScript: 1.26%\nDelphi: 0.84%\nScala: 0.84%\nRuby: 1.26%'}],
+['sy' ,{v:100, f: '\nCPP: 1.05%\nAssembly: 77.99%\nJava: 3.77%\nPHP: 1.26%\nMATLAB: 0.63%\nJavaScript: 3.14%\nSQL: 1.47%\nC: 10.48%\nVisualBasic: 0.21%'}],
+['sz' ,{v:100, f: '\nPHP: 1.29%\nJava: 5.83%\nPython: 3.88%\nJavaScript: 34.63%\nPerl: 0.32%\nAssembly: 25.57%\nC: 28.48%'}],
+['tc' ,{v:100, f: '\nRuby: 1.22%\nJavaScript: 3.30%\nPHP: 1.85%\nDelphi: 0.70%\nPerl: 0.23%\nSQL: 0.98%\nJava: 2.03%\nAda: 1.51%\nGroovy: 0.17%\nCPP: 0.06%\nPython: 0.58%\nHaskell: 0.12%\nLisp: 0.17%\nPascal: 0.23%\nCS: 0.46%\nC: 85.05%\nAssembly: 1.33%'}],
+['tf' ,{v:100, f: '\nVisualBasic: 4.00%\nC: 16.00%\nPHP: 16.00%\nPython: 4.00%\nRuby: 4.00%\nJavaScript: 56.00%'}],
+['tg' ,{v:100, f: '\nC: 16.00%\nJavaScript: 84.00%'}],
+['th' ,{v:100, f: '\nPascal: 0.37%\nCS: 0.30%\nC: 16.57%\nJavaScript: 62.51%\nMATLAB: 0.30%\nPHP: 3.44%\nJava: 10.77%\nCPP: 0.19%\nFS: 0.05%\nAda: 0.09%\nDelphi: 0.08%\nAssembly: 2.71%\nFortran: 0.02%\nPerl: 0.13%\nSQL: 1.00%\nRuby: 0.24%\nPython: 0.21%\nActionScript: 0.13%\nScala: 0.06%\nPostScript: 0.11%\nGroovy: 0.04%\nVisualBasic: 0.61%\nObjectiveC: 0.05%'}],
+['tj' ,{v:100, f: '\nAssembly: 40.00%\nC: 40.00%\nJavaScript: 20.00%'}],
+['tk' ,{v:100, f: '\nPostScript: 0.22%\nCPP: 4.16%\nPython: 2.25%\nActionScript: 0.14%\nSQL: 3.40%\nVisualBasic: 1.15%\nGroovy: 0.70%\nLisp: 0.47%\nObjectiveC: 0.29%\nDelphi: 0.86%\nScala: 0.07%\nPerl: 2.41%\nHaskell: 0.36%\nRuby: 0.81%\nAda: 6.21%\nJava: 9.17%\nC: 34.58%\nCS: 0.50%\nFortran: 0.58%\nAssembly: 0.83%\nPHP: 6.16%\nMATLAB: 0.07%\nJavaScript: 23.72%\nPascal: 0.86%'}],
+['tl' ,{v:100, f: '\nCS: 0.19%\nPascal: 0.38%\nPHP: 52.72%\nJavaScript: 8.24%\nActionScript: 0.13%\nCPP: 0.70%\nRuby: 3.17%\nAssembly: 2.15%\nDelphi: 0.06%\nObjectiveC: 0.06%\nFS: 0.06%\nHaskell: 0.06%\nLisp: 0.06%\nGroovy: 0.06%\nVisualBasic: 0.44%\nJava: 4.25%\nAda: 4.06%\nPython: 0.89%\nScala: 0.13%\nSQL: 0.76%\nPerl: 0.44%\nC: 20.98%'}],
+['tm' ,{v:100, f: '\nDelphi: 1.05%\nJavaScript: 3.42%\nPython: 1.84%\nRuby: 7.37%\nJava: 2.11%\nCPP: 5.26%\nAssembly: 61.84%\nC: 10.53%\nAda: 6.58%'}],
+['tn' ,{v:100, f: '\nPython: 0.46%\nVisualBasic: 0.20%\nPascal: 0.72%\nAda: 0.20%\nJava: 4.33%\nCS: 1.18%\nAssembly: 2.75%\nJavaScript: 56.36%\nPHP: 3.54%\nCPP: 0.85%\nC: 27.13%\nSQL: 2.10%\nPerl: 0.20%'}],
+['to' ,{v:100, f: '\nPerl: 0.01%\nFortran: 0.00%\nAssembly: 0.21%\nScala: 0.01%\nPascal: 0.05%\nSQL: 0.07%\nJava: 0.36%\nAda: 0.11%\nObjectiveC: 0.00%\nJavaScript: 10.99%\nMATLAB: 0.01%\nRuby: 0.13%\nPHP: 10.18%\nC: 77.65%\nLisp: 0.00%\nGroovy: 0.01%\nPostScript: 0.00%\nHaskell: 0.01%\nFS: 0.00%\nVisualBasic: 0.02%\nDelphi: 0.01%\nActionScript: 0.01%\nPython: 0.09%\nCPP: 0.03%\nCS: 0.01%'}],
+['tr' ,{v:100, f: '\nCPP: 0.01%\nPython: 0.00%\nActionScript: 0.00%\nFortran: 0.00%\nAssembly: 0.15%\nAda: 0.37%\nJava: 0.40%\nObjectiveC: 0.00%\nVisualBasic: 0.02%\nGroovy: 0.00%\nLisp: 0.00%\nFS: 0.00%\nHaskell: 0.00%\nPostScript: 0.00%\nC: 1.14%\nCS: 0.01%\nPascal: 0.03%\nSQL: 0.11%\nPerl: 0.01%\nPHP: 0.07%\nDelphi: 0.11%\nScala: 0.16%\nJavaScript: 97.19%\nMATLAB: 0.00%\nRuby: 0.19%'}],
+['tt' ,{v:100, f: '\nDelphi: 0.09%\nPython: 1.12%\nCPP: 0.37%\nJava: 1.21%\nRuby: 2.52%\nAssembly: 30.92%\nSQL: 1.49%\nPerl: 1.35%\nPostScript: 0.42%\nAda: 0.65%\nPascal: 1.12%\nJavaScript: 23.96%\nCS: 0.28%\nC: 17.70%\nVisualBasic: 0.14%\nGroovy: 9.15%\nLisp: 0.09%\nPHP: 7.01%\nScala: 0.37%'}],
+['tv' ,{v:100, f: '\nJava: 0.42%\nPHP: 1.41%\nMATLAB: 0.00%\nJavaScript: 73.00%\nVisualBasic: 0.02%\nLisp: 0.00%\nGroovy: 0.02%\nFS: 0.00%\nHaskell: 0.04%\nPostScript: 0.00%\nAssembly: 0.67%\nFortran: 0.00%\nAda: 0.12%\nPerl: 0.09%\nCPP: 0.02%\nPython: 0.15%\nActionScript: 0.00%\nPascal: 0.80%\nCS: 0.03%\nSQL: 0.48%\nObjectiveC: 0.00%\nDelphi: 0.02%\nScala: 0.07%\nC: 21.90%\nRuby: 0.72%'}],
+['tw' ,{v:100, f: '\nDelphi: 0.02%\nHaskell: 0.01%\nFS: 0.01%\nObjectiveC: 0.00%\nVisualBasic: 0.03%\nGroovy: 0.00%\nLisp: 0.00%\nCS: 0.03%\nC: 0.68%\nScala: 0.07%\nMATLAB: 0.00%\nPHP: 0.03%\nAda: 0.04%\nJava: 0.32%\nFortran: 0.00%\nRuby: 0.17%\nJavaScript: 97.57%\nSQL: 0.79%\nPerl: 0.01%\nCPP: 0.05%\nPostScript: 0.00%\nAssembly: 0.12%\nPython: 0.01%\nActionScript: 0.00%\nPascal: 0.02%'}],
+['tz' ,{v:100, f: '\nC: 37.00%\nPascal: 0.94%\nCPP: 0.17%\nPython: 0.52%\nPHP: 0.34%\nAda: 2.32%\nSQL: 0.52%\nJava: 2.23%\nJavaScript: 38.97%\nAssembly: 17.00%'}],
+['ua' ,{v:100, f: '\nFS: 0.16%\nPascal: 0.36%\nCS: 0.53%\nC: 23.82%\nAda: 0.78%\nJava: 5.18%\nSQL: 6.20%\nObjectiveC: 0.05%\nPerl: 0.88%\nRuby: 1.01%\nDelphi: 0.65%\nScala: 0.66%\nFortran: 0.03%\nAssembly: 1.35%\nVisualBasic: 0.36%\nGroovy: 0.13%\nLisp: 0.02%\nCPP: 1.32%\nPython: 0.67%\nActionScript: 0.02%\nJavaScript: 47.42%\nMATLAB: 0.01%\nPHP: 8.30%\nPostScript: 0.06%\nHaskell: 0.03%'}],
+['ug' ,{v:100, f: '\nCPP: 0.03%\nPHP: 0.36%\nPascal: 0.78%\nC: 1.48%\nDelphi: 0.04%\nVisualBasic: 0.05%\nJava: 0.21%\nAda: 0.14%\nAssembly: 2.76%\nRuby: 0.09%\nSQL: 0.04%\nJavaScript: 93.94%\nPerl: 0.06%\nPython: 0.02%'}],
+['gb' ,{v:100, f: '\nPerl: 0.90%\nSQL: 3.39%\nPython: 2.12%\nAssembly: 4.08%\nFortran: 0.07%\nJava: 3.69%\nAda: 0.19%\nMATLAB: 0.56%\nJavaScript: 56.66%\nVisualBasic: 1.21%\nPascal: 0.67%\nCS: 1.95%\nLisp: 0.03%\nGroovy: 0.23%\nC: 15.72%\nCPP: 1.16%\nPHP: 2.38%\nActionScript: 0.17%\nFS: 0.04%\nRuby: 3.13%\nScala: 0.32%\nDelphi: 0.19%\nObjectiveC: 0.24%\nHaskell: 0.82%\nPostScript: 0.08%'}],
+['us' ,{v:100, f: '\nVisualBasic: 0.09%\nLisp: 0.03%\nJava: 2.41%\nAda: 0.88%\nPerl: 0.13%\nSQL: 6.63%\nC: 22.19%\nCS: 0.10%\nPascal: 0.13%\nPHP: 1.75%\nMATLAB: 0.01%\nJavaScript: 51.49%\nRuby: 1.23%\nObjectiveC: 0.01%\nScala: 0.03%\nDelphi: 0.16%\nFortran: 0.03%\nAssembly: 12.00%\nFS: 0.01%\nHaskell: 0.20%\nPostScript: 0.02%\nGroovy: 0.04%\nActionScript: 0.01%\nPython: 0.27%\nCPP: 0.15%'}],
+['uy' ,{v:100, f: '\nMATLAB: 0.45%\nJavaScript: 36.36%\nScala: 0.41%\nDelphi: 0.14%\nC: 38.71%\nCS: 0.20%\nPascal: 0.85%\nAssembly: 0.22%\nFortran: 0.04%\nLisp: 0.01%\nVisualBasic: 0.22%\nJava: 3.68%\nCPP: 0.47%\nPython: 0.44%\nActionScript: 0.09%\nSQL: 2.24%\nPerl: 0.09%\nRuby: 0.34%\nAda: 0.36%\nHaskell: 0.13%\nPHP: 14.54%'}],
+['uz' ,{v:100, f: '\nDelphi: 1.17%\nPerl: 1.17%\nJava: 3.51%\nPython: 0.58%\nAssembly: 23.98%\nCPP: 1.75%\nSQL: 7.02%\nPHP: 3.51%\nJavaScript: 19.30%\nC: 33.92%\nCS: 0.58%\nPascal: 3.51%'}],
+['va' ,{v:100, f: '\nPascal: 12.23%\nAssembly: 56.51%\nRuby: 0.11%\nPython: 0.02%\nScala: 2.70%\nJava: 0.39%\nC: 20.39%\nDelphi: 0.15%\nAda: 0.48%\nHaskell: 0.07%\nPerl: 0.07%\nJavaScript: 6.89%'}],
+['vc' ,{v:100, f: '\nSQL: 2.08%\nObjectiveC: 1.30%\nC: 9.61%\nJavaScript: 16.36%\nPerl: 1.56%\nMATLAB: 1.04%\nAssembly: 2.08%\nPascal: 1.04%\nRuby: 46.75%\nVisualBasic: 1.04%\nLisp: 0.78%\nAda: 6.49%\nJava: 1.82%\nCS: 1.30%\nPHP: 3.12%\nPython: 2.34%\nCPP: 1.30%'}],
+['ve' ,{v:100, f: '\nPerl: 0.01%\nJavaScript: 97.52%\nMATLAB: 0.00%\nPostScript: 0.00%\nGroovy: 0.01%\nDelphi: 0.04%\nPHP: 0.04%\nPython: 0.00%\nFortran: 0.00%\nVisualBasic: 0.01%\nRuby: 0.25%\nHaskell: 0.01%\nSQL: 0.01%\nJava: 0.31%\nCPP: 0.00%\nAssembly: 0.08%\nPascal: 0.02%\nCS: 0.00%\nC: 1.46%\nAda: 0.08%\nActionScript: 0.00%\nScala: 0.16%'}],
+['vg' ,{v:100, f: '\nRuby: 5.48%\nJavaScript: 59.21%\nC: 13.38%\nActionScript: 0.44%\nAda: 1.32%\nAssembly: 4.61%\nCS: 0.44%\nPascal: 0.66%\nJava: 5.26%\nSQL: 0.44%\nCPP: 3.95%\nPython: 0.44%\nPHP: 1.75%\nDelphi: 2.63%'}],
+['vi' ,{v:100, f: '\nRuby: 51.52%\nJavaScript: 12.12%\nPHP: 18.18%\nC: 15.15%\nCS: 3.03%'}],
+['vn' ,{v:100, f: '\nCPP: 0.89%\nMATLAB: 0.27%\nPHP: 3.15%\nLisp: 0.04%\nPascal: 1.03%\nCS: 1.58%\nC: 56.80%\nGroovy: 0.03%\nSQL: 3.09%\nPerl: 0.08%\nFortran: 0.05%\nRuby: 1.59%\nObjectiveC: 0.04%\nVisualBasic: 1.80%\nDelphi: 0.25%\nScala: 0.06%\nHaskell: 0.01%\nFS: 0.05%\nAssembly: 1.77%\nPostScript: 0.09%\nAda: 0.09%\nActionScript: 0.06%\nJava: 5.02%\nJavaScript: 22.04%\nPython: 0.13%'}],
+['vu' ,{v:100, f: '\nGroovy: 0.40%\nHaskell: 0.11%\nPostScript: 0.05%\nDelphi: 0.13%\nJava: 5.13%\nAda: 9.09%\nLisp: 0.11%\nAssembly: 0.32%\nC: 46.90%\nCS: 0.21%\nPascal: 0.16%\nCPP: 0.56%\nPython: 0.51%\nJavaScript: 34.65%\nPHP: 0.27%\nRuby: 0.59%\nPerl: 0.03%\nSQL: 0.56%\nVisualBasic: 0.21%'}],
+['wf' ,{v:100, f: '\nJava: 2.04%\nRuby: 1.02%\nJavaScript: 84.69%\nPHP: 6.12%\nPython: 1.02%\nSQL: 1.02%\nAssembly: 4.08%'}],
+['ws' ,{v:100, f: '\nLisp: 0.12%\nGroovy: 0.26%\nVisualBasic: 1.40%\nScala: 0.60%\nDelphi: 3.95%\nJava: 10.05%\nRuby: 3.17%\nPascal: 1.17%\nCS: 0.92%\nC: 23.67%\nSQL: 4.99%\nPerl: 0.63%\nCPP: 1.99%\nPython: 1.24%\nActionScript: 0.26%\nPHP: 7.46%\nMATLAB: 0.15%\nJavaScript: 25.20%\nAssembly: 8.39%\nObjectiveC: 0.09%\nAda: 1.89%\nFortran: 0.09%\nFS: 0.02%\nHaskell: 2.19%\nPostScript: 0.08%'}],
+['ye' ,{v:100, f: '\nSQL: 3.08%\nC: 7.69%\nCPP: 0.77%\nJavaScript: 88.46%'}],
+['yt' ,{v:100, f: '\nC: 75.00%\nPHP: 25.00%'}],
+['za' ,{v:100, f: '\nPerl: 0.04%\nFortran: 0.02%\nAssembly: 4.30%\nVisualBasic: 0.05%\nGroovy: 0.12%\nLisp: 0.00%\nDelphi: 0.19%\nScala: 0.04%\nActionScript: 0.01%\nPython: 0.20%\nCPP: 0.09%\nC: 15.37%\nCS: 1.90%\nPascal: 0.39%\nSQL: 3.62%\nRuby: 0.58%\nPHP: 9.32%\nMATLAB: 0.03%\nJavaScript: 62.76%\nObjectiveC: 0.00%\nJava: 0.80%\nAda: 0.05%\nFS: 0.00%\nHaskell: 0.10%\nPostScript: 0.01%'}],
+['zm' ,{v:100, f: '\nJavaScript: 11.58%\nAssembly: 58.95%\nSQL: 0.23%\nJava: 0.82%\nC: 26.32%\nPHP: 2.11%'}],
+['zw' ,{v:100, f: '\nCPP: 0.53%\nActionScript: 0.13%\nDelphi: 0.10%\nC: 13.10%\nCS: 0.40%\nVisualBasic: 0.07%\nSQL: 0.80%\nPerl: 0.13%\nPascal: 0.13%\nRuby: 0.53%\nPython: 13.00%\nJava: 2.03%\nJavaScript: 53.01%\nPHP: 2.69%\nPostScript: 0.07%\nAssembly: 13.27%'}],
+]);
+
+      var options = {};
+      options['dataMode'] = 'regions';
+	  options['width'] = '1300px';
+	  options['height'] = '750px';
+	  options['showLegend'] = false;
+	
+
+      var container = document.getElementById('map_canvas');
+      var geomap = new google.visualization.GeoMap(container);
+	  geomap.draw(data, options);
+
+	  
+  };
+  </script>
+  
+  <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart_com);
+      google.setOnLoadCallback(drawChart_net);
+	  google.setOnLoadCallback(drawChart_edu);
+	  google.setOnLoadCallback(drawChart_org);
+	  google.setOnLoadCallback(drawChart_gov);
+	 
+	 function drawChart_com() {
+        var data_com = google.visualization.arrayToDataTable([
+          ['Programming Language', 'Occurrence'],
+		  
+		['ActionScript' ,	310171],
+		['Ada' ,	5569489],
+		['Assembly' ,	33059845],
+		['C' ,	121242619],
+		['CPP' ,	6040792],
+		['CS' ,	5026374],
+		['Delphi' ,	1149509],
+		['Fortran' ,	211883],
+		['FS' ,	296456],
+		['Groovy' ,	2465008],
+		['Haskell' ,	1383618],
+		['Java' ,	34189474],
+		['JavaScript' ,	288703749],
+		['Lisp' ,	314820],
+		['MATLAB' ,	1626698],
+		['ObjectiveC' ,	464902],
+		['Pascal' ,	2544973],
+		['Perl' ,	5258017],
+		['PHP' ,	34852094],
+		['PostScript' ,	2400985],
+		['Python' ,	10171241],
+		['Ruby' ,	22926804],
+		['Scala' ,	2085129],
+		['SQL' ,	15781273],
+		['VisualBasic' ,	1824993]
+
+
+        ]);
+
+        var options_com = {
+          title: '.com',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d_com'));
+        chart.draw(data_com, options_com);
+      }
+	  	function drawChart_net() {
+        var data_net = google.visualization.arrayToDataTable([
+          ['Programming Language', 'Occurrence'],
+        ['ActionScript' ,	394518],
+		['Ada' ,	306837],
+		['Assembly' ,	839015],
+		['C' ,	4158080],
+		['CPP' ,	1001058],
+		['CS' ,	263151],
+		['Delphi' ,	62210],
+		['Fortran' ,	27630],
+		['FS' ,	29389],
+		['Groovy' ,	44682],
+		['Haskell' ,	93470],
+		['Java' ,	2831160],
+		['JavaScript' ,	8278818],
+		['Lisp' ,	1212208],
+		['MATLAB' ,	15201],
+		['ObjectiveC' ,	24964],
+		['Pascal' ,	210267],
+		['Perl' ,	190604],
+		['PHP' ,	5872782],
+		['PostScript' ,	35923],
+		['Python' ,	627919],
+		['Ruby' ,	1020180],
+		['Scala' ,	34757],
+		['SQL' ,	1087738],
+		['VisualBasic' ,	484893]
+
+
+        ]);
+
+        var options_net = {
+          title: '.net',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d_net'));
+        chart.draw(data_net, options_net);
+      }
+	  function drawChart_edu() {
+        var data_edu = google.visualization.arrayToDataTable([
+          ['Programming Language', 'Occurrence'],
+		['ActionScript',	1433],
+		['Ada',	279400],
+		['Assembly',	1089656],
+		['C',	7858523],
+        ['CPP',	106194],
+		['CS',	16216],
+		['Delphi',	28520],
+		['Fortran',	30266],
+		['FS',	2130],
+		['Groovy',	3099],
+		['Haskell',	65300],
+		['Java',	482765],
+		['JavaScript',	11250044],
+		['Lisp',	25707],
+		['MATLAB',	39996],
+		['ObjectiveC',	1631],
+		['Pascal',	65292],
+		['Perl',	52960],
+		['PHP',	216074],
+		['PostScript',	16439],
+		['Python',	59189],
+		['Ruby',	141698],
+		['Scala',	10090],
+		['SQL',	282633],
+		['VisualBasic',	60539]
+
+
+        ]);
+
+        var options_edu = {
+          title: '.edu',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d_edu'));
+        chart.draw(data_edu, options_edu);
+      }
+	  function drawChart_org() {
+        var data_org = google.visualization.arrayToDataTable([
+          ['Programming Language', 'Occurrence'],
+		['ActionScript',	52729],
+		['Ada',	485634],
+		['Assembly',	6284392],
+		['C',	13284578],
+		['CPP',	1994814],
+		['CS',	255095],
+		['Delphi',	109191],
+		['Fortran',	168956],
+		['FS',	19592],
+		['Groovy',	182399],
+		['Haskell',	1271111],
+		['Java',	8767946],
+		['JavaScript',	30403382],
+		['Lisp',	306521],
+		['MATLAB',	51255],
+		['ObjectiveC',	64992],
+		['Pascal',	533252],
+		['Perl',	4099953],
+		['PHP',	3726838],
+		['PostScript',	156849],
+		['Python',	2592439],
+		['Ruby',	1639555],
+		['Scala',	223418],
+		['SQL',	2527348],
+		['VisualBasic',	147890]
+
+        ]);
+
+        var options_org = {
+          title: '.org',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d_org'));
+        chart.draw(data_org, options_org);
+      }
+	  	  function drawChart_gov() {
+        var data_gov = google.visualization.arrayToDataTable([
+          ['Programming Language', 'Occurrence'],
+		['ActionScript',	161],
+		['Ada',	43672],
+		['Assembly',	3389387],
+		['C',	4001107],
+		['CPP',	38107],
+		['CS',	2694],
+		['Delphi',	13784],
+		['Fortran',	18236],
+		['FS',	313],
+		['Groovy',	509],
+		['Haskell',	30870],
+		['Java',	145673],
+		['JavaScript',	10583212],
+		['Lisp',	548],
+		['MATLAB',	8460],
+		['ObjectiveC',	42],
+		['Pascal',	16335],
+		['Perl',	11804],
+		['PHP',	21207],
+		['PostScript',	2985],
+		['Python',	11636],
+		['Ruby',	44506],
+		['Scala',	1990],
+		['SQL',	24691],
+		['VisualBasic',	4277]
+
+        ]);
+
+        var options_gov = {
+          title: '.gov',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d_gov'));
+        chart.draw(data_gov, options_gov);
+      }
+    </script>
+</head>
+
+<body>
+  <h1>IN4144 Data Science (2013-2014 Q4)</h1>
+  <h2>Final project: Distrubition of programming languages across internet domains</h2>
+  <h2>Students: Igor Levaja & Vladimir Vucic</h2>
+  <div id='map_canvas'></div>
+  <div id="piechart_3d_com" style="width: 1300px; height: 500px;"></div>
+  <div id="piechart_3d_net" style="width: 1300px; height: 500px;"></div>
+  <div id="piechart_3d_edu" style="width: 1300px; height: 500px;"></div>
+  <div id="piechart_3d_org" style="width: 1300px; height: 500px;"></div>
+  <div id="piechart_3d_gov" style="width: 1300px; height: 500px;"></div>
+</body>
+
+</html>
